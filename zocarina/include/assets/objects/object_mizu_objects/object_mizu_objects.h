@@ -1,0 +1,146 @@
+#ifndef OBJECT_MIZU_OBJECTS_H
+#define OBJECT_MIZU_OBJECTS_H
+
+#include "bgcheck.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern Vtx gWaterTempleFloatingPlatformOutsideCentralPillarVtx[];
+extern Gfx gWaterTempleFloatingPlatformOutsideCentralPillarDL[48];
+extern BgCamInfo gWaterTempleFloatingPlatformOutsideCentralPillarBgCamList[];
+extern SurfaceType gWaterTempleFloatingPlatformOutsideCentralPillarSurfaceTypes[];
+extern CollisionPoly gWaterTempleFloatingPlatformOutsideCentralPillarPolyList[];
+extern Vec3s gWaterTempleFloatingPlatformOutsideCentralPillarVtxList[];
+extern CollisionHeader gWaterTempleFloatingPlatformOutsideCentralPillarCol;
+extern Vtx gWaterTempleFloatingPlatformWestVtx[];
+extern Gfx gWaterTempleFloatingPlatformWestDL[52];
+extern BgCamInfo gWaterTempleFloatingPlatformWestBgCamList[];
+extern SurfaceType gWaterTempleFloatingPlatformWestSurfaceTypes[];
+extern CollisionPoly gWaterTempleFloatingPlatformWestPolyList[];
+extern Vec3s gWaterTempleFloatingPlatformWestVtxList[];
+extern CollisionHeader gWaterTempleFloatingPlatformWestCol;
+extern Vtx gWaterTempleFloatingPlatformInsideCentralPillarVtx[];
+extern Gfx gWaterTempleFloatingPlatformInsideCentralPillarDL[53];
+extern BgCamInfo gWaterTempleFloatingPlatformInsideCentralPillarBgCamList[];
+extern SurfaceType gWaterTempleFloatingPlatformInsideCentralPillarSurfaceTypes[];
+extern CollisionPoly gWaterTempleFloatingPlatformInsideCentralPillarPolyList[];
+extern Vec3s gWaterTempleFloatingPlatformInsideCentralPillarVtxList[];
+extern CollisionHeader gWaterTempleFloatingPlatformInsideCentralPillarCol;
+extern Vtx gWaterTempleHookshotPlatformVtx[];
+extern Gfx gWaterTempleHookshotPlatformDL[65];
+extern BgCamInfo gWaterTempleHookshotPlatformBgCamList[];
+extern SurfaceType gWaterTempleHookshotPlatformSurfaceTypes[];
+extern CollisionPoly gWaterTempleHookshotPlatformPolyList[];
+extern Vec3s gWaterTempleHookshotPlatformVtxList[];
+extern CollisionHeader gWaterTempleHookshotPlatformCol;
+extern Vtx object_mizu_objects_Vtx_001630[];
+extern Gfx gObjectMizuObjectsBwallDL_001770[47];
+extern Vtx object_mizu_objects_Vtx_0018F0[];
+extern Gfx gObjectMizuObjectsBwallDL_001A30[35];
+extern BgCamInfo gObjectMizuObjectsBwallCol_001C58_06001B50_BgCamList[];
+extern SurfaceType gObjectMizuObjectsBwallCol_001C58_06001B58_SurfaceTypes[];
+extern CollisionPoly gObjectMizuObjectsBwallCol_001C58_06001B60_PolyList[];
+extern Vec3s gObjectMizuObjectsBwallCol_001C58_06001C20_VtxList[];
+extern CollisionHeader gObjectMizuObjectsBwallCol_001C58;
+extern Vtx object_mizu_objects_Vtx_001C90[];
+extern Gfx gObjectMizuObjectsBwallDL_001CD0[26];
+extern BgCamInfo gObjectMizuObjectsBwallCol_001DE8_06001DA0_BgCamList[];
+extern SurfaceType gObjectMizuObjectsBwallCol_001DE8_06001DA8_SurfaceTypes[];
+extern CollisionPoly gObjectMizuObjectsBwallCol_001DE8_06001DB0_PolyList[];
+extern Vec3s gObjectMizuObjectsBwallCol_001DE8_06001DD0_VtxList[];
+extern CollisionHeader gObjectMizuObjectsBwallCol_001DE8;
+extern Vtx object_mizu_objects_Vtx_001E20[];
+extern Gfx gObjectMizuObjectsBwallDL_002090[38];
+extern Vtx object_mizu_objects_Vtx_0021C0[];
+extern Gfx gObjectMizuObjectsBwallDL_002390[51];
+extern BgCamInfo gObjectMizuObjectsBwallCol_0025A4_06002530_BgCamList[];
+extern SurfaceType gObjectMizuObjectsBwallCol_0025A4_06002538_SurfaceTypes[];
+extern CollisionPoly gObjectMizuObjectsBwallCol_0025A4_06002540_PolyList[];
+extern Vec3s gObjectMizuObjectsBwallCol_0025A4_06002580_VtxList[];
+extern CollisionHeader gObjectMizuObjectsBwallCol_0025A4;
+extern Vtx gWaterTempleDragonStatueVtx[];
+extern Gfx gWaterTempleDragonStatueDL[130];
+extern BgCamInfo gWaterTempleDragonStatueBgCamList[];
+extern SurfaceType gWaterTempleDragonStatueSurfaceTypes[];
+extern CollisionPoly gWaterTempleDragonStatuePolyList[];
+extern Vec3s gWaterTempleDragonStatueVtxList[];
+extern CollisionHeader gWaterTempleDragonStatueCol;
+#define object_mizu_objects_Tex_0035C0_WIDTH 32
+#define object_mizu_objects_Tex_0035C0_HEIGHT 64
+extern u64 object_mizu_objects_Tex_0035C0[TEX_LEN(u64, object_mizu_objects_Tex_0035C0_WIDTH, object_mizu_objects_Tex_0035C0_HEIGHT, 16)];
+extern Vtx gWaterTempleDoorLeftVtx[];
+extern Vtx gWaterTempleDoorRightVtx[];
+extern Vtx object_mizu_objects_Vtx_0047C0[];
+extern Gfx gWaterTempleDoorDL_0048B0[21];
+extern Gfx gWaterTempleDoorLeftDL[23];
+extern Gfx gWaterTempleDoorRightDL[23];
+extern Vtx object_mizu_objects_Vtx_004AD0[];
+extern Gfx gObjectMizuObjectsWaterDL_004B20[27];
+#define object_mizu_objects_004C00_Tex_WIDTH 32
+#define object_mizu_objects_004C00_Tex_HEIGHT 64
+extern u64 object_mizu_objects_004C00_Tex[TEX_LEN(u64, object_mizu_objects_004C00_Tex_WIDTH, object_mizu_objects_004C00_Tex_HEIGHT, 16)];
+extern Vtx object_mizu_objects_Vtx_005C00[];
+extern Gfx gObjectMizuObjectsDoorShutterDL_005D90[27];
+#define object_mizu_objects_005E70_Tex_WIDTH 32
+#define object_mizu_objects_005E70_Tex_HEIGHT 64
+extern u64 object_mizu_objects_005E70_Tex[TEX_LEN(u64, object_mizu_objects_005E70_Tex_WIDTH, object_mizu_objects_005E70_Tex_HEIGHT, 16)];
+extern Vtx object_mizu_objects_Vtx_006E70[];
+extern Gfx gObjectMizuObjectsDoorShutterDL_007000[27];
+extern Vtx object_mizu_objects_Vtx_0070E0[];
+extern Gfx gObjectMizuObjectsShutterDL_007130[19];
+extern BgCamInfo gObjectMizuObjectsShutterCol_007250_060071D0_BgCamList[];
+extern SurfaceType gObjectMizuObjectsShutterCol_007250_060071D8_SurfaceTypes[];
+extern CollisionPoly gObjectMizuObjectsShutterCol_007250_060071E0_PolyList[];
+extern Vec3s gObjectMizuObjectsShutterCol_007250_06007220_VtxList[];
+extern CollisionHeader gObjectMizuObjectsShutterCol_007250;
+extern Vtx object_mizu_objects_Vtx_007280[];
+extern Gfx gObjectMizuObjectsShutterDL_0072D0[19];
+extern BgCamInfo gObjectMizuObjectsShutterCol_0073F0_06007370_BgCamList[];
+extern SurfaceType gObjectMizuObjectsShutterCol_0073F0_06007378_SurfaceTypes[];
+extern CollisionPoly gObjectMizuObjectsShutterCol_0073F0_06007380_PolyList[];
+extern Vec3s gObjectMizuObjectsShutterCol_0073F0_060073C0_VtxList[];
+extern CollisionHeader gObjectMizuObjectsShutterCol_0073F0;
+extern BgCamInfo gObjectMizuObjectsUzuCol_0074EC_06007420_BgCamList[];
+extern SurfaceType gObjectMizuObjectsUzuCol_0074EC_06007428_SurfaceTypes[];
+extern CollisionPoly gObjectMizuObjectsUzuCol_0074EC_06007430_PolyList[];
+extern Vec3s gObjectMizuObjectsUzuCol_0074EC_060074B0_VtxList[];
+extern CollisionHeader gObjectMizuObjectsUzuCol_0074EC;
+#define object_mizu_objects_007520_Tex_WIDTH 32
+#define object_mizu_objects_007520_Tex_HEIGHT 32
+extern u64 object_mizu_objects_007520_Tex[TEX_LEN(u64, object_mizu_objects_007520_Tex_WIDTH, object_mizu_objects_007520_Tex_HEIGHT, 16)];
+#define object_mizu_objects_007D20_Tex_WIDTH 32
+#define object_mizu_objects_007D20_Tex_HEIGHT 32
+extern u64 object_mizu_objects_007D20_Tex[TEX_LEN(u64, object_mizu_objects_007D20_Tex_WIDTH, object_mizu_objects_007D20_Tex_HEIGHT, 16)];
+#define object_mizu_objects_008520_Tex_WIDTH 32
+#define object_mizu_objects_008520_Tex_HEIGHT 32
+extern u64 object_mizu_objects_008520_Tex[TEX_LEN(u64, object_mizu_objects_008520_Tex_WIDTH, object_mizu_objects_008520_Tex_HEIGHT, 16)];
+#define object_mizu_objects_008D20_Tex_WIDTH 32
+#define object_mizu_objects_008D20_Tex_HEIGHT 32
+extern u64 object_mizu_objects_008D20_Tex[TEX_LEN(u64, object_mizu_objects_008D20_Tex_WIDTH, object_mizu_objects_008D20_Tex_HEIGHT, 16)];
+#define object_mizu_objects_009520_Tex_WIDTH 32
+#define object_mizu_objects_009520_Tex_HEIGHT 32
+extern u64 object_mizu_objects_009520_Tex[TEX_LEN(u64, object_mizu_objects_009520_Tex_WIDTH, object_mizu_objects_009520_Tex_HEIGHT, 4)];
+#define object_mizu_objects_009720_Tex_WIDTH 32
+#define object_mizu_objects_009720_Tex_HEIGHT 32
+extern u64 object_mizu_objects_009720_Tex[TEX_LEN(u64, object_mizu_objects_009720_Tex_WIDTH, object_mizu_objects_009720_Tex_HEIGHT, 4)];
+#define object_mizu_objects_009920_Tex_WIDTH 32
+#define object_mizu_objects_009920_Tex_HEIGHT 32
+extern u64 object_mizu_objects_009920_Tex[TEX_LEN(u64, object_mizu_objects_009920_Tex_WIDTH, object_mizu_objects_009920_Tex_HEIGHT, 4)];
+#define object_mizu_objects_009B20_Tex_WIDTH 32
+#define object_mizu_objects_009B20_Tex_HEIGHT 32
+extern u64 object_mizu_objects_009B20_Tex[TEX_LEN(u64, object_mizu_objects_009B20_Tex_WIDTH, object_mizu_objects_009B20_Tex_HEIGHT, 4)];
+#define object_mizu_objects_009D20_Tex_WIDTH 32
+#define object_mizu_objects_009D20_Tex_HEIGHT 32
+extern u64 object_mizu_objects_009D20_Tex[TEX_LEN(u64, object_mizu_objects_009D20_Tex_WIDTH, object_mizu_objects_009D20_Tex_HEIGHT, 4)];
+#define object_mizu_objects_009F20_Tex_WIDTH 32
+#define object_mizu_objects_009F20_Tex_HEIGHT 32
+extern u64 object_mizu_objects_009F20_Tex[TEX_LEN(u64, object_mizu_objects_009F20_Tex_WIDTH, object_mizu_objects_009F20_Tex_HEIGHT, 16)];
+#define object_mizu_objects_00A720_Tex_WIDTH 16
+#define object_mizu_objects_00A720_Tex_HEIGHT 32
+extern u64 object_mizu_objects_00A720_Tex[TEX_LEN(u64, object_mizu_objects_00A720_Tex_WIDTH, object_mizu_objects_00A720_Tex_HEIGHT, 16)];
+#define object_mizu_objects_00AB20_Tex_WIDTH 64
+#define object_mizu_objects_00AB20_Tex_HEIGHT 64
+extern u64 object_mizu_objects_00AB20_Tex[TEX_LEN(u64, object_mizu_objects_00AB20_Tex_WIDTH, object_mizu_objects_00AB20_Tex_HEIGHT, 4)];
+
+#endif

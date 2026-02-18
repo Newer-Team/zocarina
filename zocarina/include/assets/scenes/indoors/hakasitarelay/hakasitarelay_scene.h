@@ -1,0 +1,40 @@
+#ifndef HAKASITARELAY_SCENE_H
+#define HAKASITARELAY_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd hakasitarelay_scene[];
+#define LENGTH_hakasitarelay_scene_02000060_PlayerEntryList 3
+extern ActorEntry hakasitarelay_scene_02000060_PlayerEntryList[LENGTH_hakasitarelay_scene_02000060_PlayerEntryList];
+#define LENGTH_hakasitarelay_scene_02000090_TransitionActorEntryList 7
+extern TransitionActorEntry hakasitarelay_scene_02000090_TransitionActorEntryList[LENGTH_hakasitarelay_scene_02000090_TransitionActorEntryList];
+#define LENGTH_hakasitarelay_scene_02000100_RoomList 7
+extern RomFile hakasitarelay_scene_02000100_RoomList[LENGTH_hakasitarelay_scene_02000100_RoomList];
+extern Spawn hakasitarelay_scene_02000138_SpawnList[];
+extern s16 hakasitarelay_scene_02000140_ExitList[];
+#define LENGTH_hakasitarelay_scene_02000144_EnvLightSettingsList 5
+extern EnvLightSettings hakasitarelay_scene_02000144_EnvLightSettingsList[LENGTH_hakasitarelay_scene_02000144_EnvLightSettingsList];
+extern BgCamInfo hakasitarelay_scene_0200C04C_BgCamList[];
+extern SurfaceType hakasitarelay_scene_0200C04C_SurfaceTypes[];
+extern CollisionPoly hakasitarelay_scene_0200C04C_PolyList[];
+extern Vec3s hakasitarelay_scene_0200C04C_VtxList[];
+extern CollisionHeader hakasitarelay_scene_0200C04C_Col;
+#define hakasitarelay_scene_0000C080_Tex_WIDTH 64
+#define hakasitarelay_scene_0000C080_Tex_HEIGHT 32
+extern u64 hakasitarelay_scene_0000C080_Tex[TEX_LEN(u64, hakasitarelay_scene_0000C080_Tex_WIDTH, hakasitarelay_scene_0000C080_Tex_HEIGHT, 16)];
+#define hakasitarelay_scene_0000D080_Tex_WIDTH 32
+#define hakasitarelay_scene_0000D080_Tex_HEIGHT 32
+extern u64 hakasitarelay_scene_0000D080_Tex[TEX_LEN(u64, hakasitarelay_scene_0000D080_Tex_WIDTH, hakasitarelay_scene_0000D080_Tex_HEIGHT, 16)];
+#define hakasitarelay_scene_0000D880_Tex_WIDTH 64
+#define hakasitarelay_scene_0000D880_Tex_HEIGHT 64
+extern u64 hakasitarelay_scene_0000D880_Tex[TEX_LEN(u64, hakasitarelay_scene_0000D880_Tex_WIDTH, hakasitarelay_scene_0000D880_Tex_HEIGHT, 4)];
+extern CutsceneData gSongOfStormsCs[];
+
+#endif

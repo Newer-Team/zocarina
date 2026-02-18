@@ -1,0 +1,74 @@
+#ifndef ICE_DOUKUTU_SCENE_H
+#define ICE_DOUKUTU_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "path.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd ice_doukutu_scene[];
+extern SceneCmd* ice_doukutu_scene_02000070_AltHeaders[];
+#define LENGTH_ice_doukutu_scene_02000080_PlayerEntryList 2
+extern ActorEntry ice_doukutu_scene_02000080_PlayerEntryList[LENGTH_ice_doukutu_scene_02000080_PlayerEntryList];
+#define LENGTH_ice_doukutu_scene_020000A0_TransitionActorEntryList 12
+extern TransitionActorEntry ice_doukutu_scene_020000A0_TransitionActorEntryList[LENGTH_ice_doukutu_scene_020000A0_TransitionActorEntryList];
+#define LENGTH_ice_doukutu_scene_02000160_RoomList 12
+extern RomFile ice_doukutu_scene_02000160_RoomList[LENGTH_ice_doukutu_scene_02000160_RoomList];
+extern Spawn ice_doukutu_scene_020001C0_SpawnList[];
+extern s16 ice_doukutu_scene_020001C4_ExitList[];
+#define LENGTH_ice_doukutu_scene_020001C8_EnvLightSettingsList 6
+extern EnvLightSettings ice_doukutu_scene_020001C8_EnvLightSettingsList[LENGTH_ice_doukutu_scene_020001C8_EnvLightSettingsList];
+extern Vec3s ice_doukutu_scenePathList_000304_0200024C_Points[];
+extern Vec3s ice_doukutu_scenePathList_000304_02000270_Points[];
+extern Vec3s ice_doukutu_scenePathList_000304_02000290_Points[];
+extern Vec3s ice_doukutu_scenePathList_000304_020002CC_Points[];
+extern Vec3s ice_doukutu_scenePathList_000304_020002E0_Points[];
+extern Path ice_doukutu_scenePathList_000304[];
+extern CutsceneData gIceCavernSerenadeCs[];
+extern BgCamInfo ice_doukutu_scene_0200F668_BgCamList[];
+extern SurfaceType ice_doukutu_scene_0200F668_SurfaceTypes[];
+extern CollisionPoly ice_doukutu_scene_0200F668_PolyList[];
+extern Vec3s ice_doukutu_scene_0200F668_VtxList[];
+extern WaterBox ice_doukutu_scene_0200F668_WaterBoxes[];
+extern CollisionHeader ice_doukutu_scene_0200F668_Col;
+extern SceneCmd ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds[];
+#define LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F708_PlayerEntryList 1
+extern ActorEntry ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F708_PlayerEntryList[LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F708_PlayerEntryList];
+#define LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F718_TransitionActorEntryList 12
+extern TransitionActorEntry ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F718_TransitionActorEntryList[LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F718_TransitionActorEntryList];
+#define LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F7D8_RoomList 12
+extern RomFile ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F7D8_RoomList[LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F7D8_RoomList];
+extern Spawn ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F838_SpawnList[];
+extern s16 ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F83C_ExitList[];
+#define LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F840_EnvLightSettingsList 4
+extern EnvLightSettings ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F840_EnvLightSettingsList[LENGTH_ice_doukutu_scene_02000070_AltHeaders_0200F6A0_Cmds_0200F840_EnvLightSettingsList];
+//#define ice_doukutu_scene_0000F8A0_TLUT_TLUT_COUNT 16
+extern u64 ice_doukutu_scene_0000F8A0_TLUT[];
+#define gIceCavernNightEntranceTex_WIDTH 64
+#define gIceCavernNightEntranceTex_HEIGHT 4
+extern u64 gIceCavernNightEntranceTex[TEX_LEN(u64, gIceCavernNightEntranceTex_WIDTH, gIceCavernNightEntranceTex_HEIGHT, 16)];
+#define gIceCavernDayEntranceTex_WIDTH 64
+#define gIceCavernDayEntranceTex_HEIGHT 4
+extern u64 gIceCavernDayEntranceTex[TEX_LEN(u64, gIceCavernDayEntranceTex_WIDTH, gIceCavernDayEntranceTex_HEIGHT, 16)];
+#define ice_doukutu_scene_0000FCC0_Tex_WIDTH 32
+#define ice_doukutu_scene_0000FCC0_Tex_HEIGHT 32
+extern u64 ice_doukutu_scene_0000FCC0_Tex[TEX_LEN(u64, ice_doukutu_scene_0000FCC0_Tex_WIDTH, ice_doukutu_scene_0000FCC0_Tex_HEIGHT, 8)];
+#define ice_doukutu_scene_000100C0_Tex_WIDTH 32
+#define ice_doukutu_scene_000100C0_Tex_HEIGHT 32
+extern u64 ice_doukutu_scene_000100C0_Tex[TEX_LEN(u64, ice_doukutu_scene_000100C0_Tex_WIDTH, ice_doukutu_scene_000100C0_Tex_HEIGHT, 16)];
+#define ice_doukutu_scene_000108C0_Tex_WIDTH 16
+#define ice_doukutu_scene_000108C0_Tex_HEIGHT 16
+extern u64 ice_doukutu_scene_000108C0_Tex[TEX_LEN(u64, ice_doukutu_scene_000108C0_Tex_WIDTH, ice_doukutu_scene_000108C0_Tex_HEIGHT, 16)];
+#define ice_doukutu_scene_00010AC0_Tex_WIDTH 32
+#define ice_doukutu_scene_00010AC0_Tex_HEIGHT 32
+extern u64 ice_doukutu_scene_00010AC0_Tex[TEX_LEN(u64, ice_doukutu_scene_00010AC0_Tex_WIDTH, ice_doukutu_scene_00010AC0_Tex_HEIGHT, 8)];
+#define ice_doukutu_scene_00010EC0_Tex_WIDTH 32
+#define ice_doukutu_scene_00010EC0_Tex_HEIGHT 32
+extern u64 ice_doukutu_scene_00010EC0_Tex[TEX_LEN(u64, ice_doukutu_scene_00010EC0_Tex_WIDTH, ice_doukutu_scene_00010EC0_Tex_HEIGHT, 16)];
+
+#endif

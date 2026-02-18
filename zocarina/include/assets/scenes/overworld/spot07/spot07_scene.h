@@ -1,0 +1,119 @@
+#ifndef SPOT07_SCENE_H
+#define SPOT07_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "path.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd spot07_scene[];
+extern SceneCmd* spot07_scene_02000070_AltHeaders[];
+#define LENGTH_spot07_scene_02000080_PlayerEntryList 5
+extern ActorEntry spot07_scene_02000080_PlayerEntryList[LENGTH_spot07_scene_02000080_PlayerEntryList];
+#define LENGTH_spot07_scene_020000D0_TransitionActorEntryList 2
+extern TransitionActorEntry spot07_scene_020000D0_TransitionActorEntryList[LENGTH_spot07_scene_020000D0_TransitionActorEntryList];
+#define LENGTH_spot07_scene_020000F0_RoomList 2
+extern RomFile spot07_scene_020000F0_RoomList[LENGTH_spot07_scene_020000F0_RoomList];
+extern Spawn spot07_scene_02000100_SpawnList[];
+extern s16 spot07_scene_0200010C_ExitList[];
+#define LENGTH_spot07_scene_02000114_EnvLightSettingsList 12
+extern EnvLightSettings spot07_scene_02000114_EnvLightSettingsList[LENGTH_spot07_scene_02000114_EnvLightSettingsList];
+extern Vec3s spot07_scenePathList_000234_0200021C_Points[];
+extern Vec3s spot07_scenePathList_000234_02000228_Points[];
+extern Path spot07_scenePathList_000234[];
+extern Vec3s spot07_scene_02003824_BgCamList_02000250_BgCamFuncData[];
+extern BgCamInfo spot07_scene_02003824_BgCamList[];
+extern SurfaceType spot07_scene_02003824_SurfaceTypes[];
+extern CollisionPoly spot07_scene_02003824_PolyList[];
+extern Vec3s spot07_scene_02003824_VtxList[];
+extern WaterBox spot07_scene_02003824_WaterBoxes[];
+extern CollisionHeader spot07_scene_02003824_Col;
+extern CutsceneData gZorasDomainCreditsCs[];
+extern SceneCmd spot07_scene_02000070_AltHeaders_02003A40_Cmds[];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003AA8_PlayerEntryList 5
+extern ActorEntry spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003AA8_PlayerEntryList[LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003AA8_PlayerEntryList];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003AF8_TransitionActorEntryList 2
+extern TransitionActorEntry spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003AF8_TransitionActorEntryList[LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003AF8_TransitionActorEntryList];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B18_RoomList 2
+extern RomFile spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B18_RoomList[LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B18_RoomList];
+extern Spawn spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B28_SpawnList[];
+extern s16 spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B34_ExitList[];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B3C_EnvLightSettingsList 12
+extern EnvLightSettings spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B3C_EnvLightSettingsList[LENGTH_spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003B3C_EnvLightSettingsList];
+extern Vec3s spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003C50_PathList_02003C44_Points[];
+extern Path spot07_scene_02000070_AltHeaders_02003A40_Cmds_02003C50_PathList[];
+extern SceneCmd spot07_scene_02000070_AltHeaders_02003C60_Cmds[];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CC8_PlayerEntryList 1
+extern ActorEntry spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CC8_PlayerEntryList[LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CC8_PlayerEntryList];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CD8_TransitionActorEntryList 2
+extern TransitionActorEntry spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CD8_TransitionActorEntryList[LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CD8_TransitionActorEntryList];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CF8_RoomList 2
+extern RomFile spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CF8_RoomList[LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003CF8_RoomList];
+extern Spawn spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003D08_SpawnList[];
+extern s16 spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003D0C_ExitList[];
+#define LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003D14_EnvLightSettingsList 4
+extern EnvLightSettings spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003D14_EnvLightSettingsList[LENGTH_spot07_scene_02000070_AltHeaders_02003C60_Cmds_02003D14_EnvLightSettingsList];
+extern CutsceneData gZorasDomainIntroCs[];
+//#define spot07_scene_00003F70_TLUT_TLUT_COUNT 16
+extern u64 spot07_scene_00003F70_TLUT[];
+#define spot07_scene_00003F98_Tex_WIDTH 32
+#define spot07_scene_00003F98_Tex_HEIGHT 64
+extern u64 spot07_scene_00003F98_Tex[TEX_LEN(u64, spot07_scene_00003F98_Tex_WIDTH, spot07_scene_00003F98_Tex_HEIGHT, 16)];
+#define spot07_scene_00004F98_CITex_WIDTH 64
+#define spot07_scene_00004F98_CITex_HEIGHT 32
+extern u64 spot07_scene_00004F98_CITex[TEX_LEN(u64, spot07_scene_00004F98_CITex_WIDTH, spot07_scene_00004F98_CITex_HEIGHT, 4)];
+#define spot07_scene_00005398_CITex_WIDTH 64
+#define spot07_scene_00005398_CITex_HEIGHT 32
+extern u64 spot07_scene_00005398_CITex[TEX_LEN(u64, spot07_scene_00005398_CITex_WIDTH, spot07_scene_00005398_CITex_HEIGHT, 4)];
+#define spot07_scene_00005798_CITex_WIDTH 64
+#define spot07_scene_00005798_CITex_HEIGHT 32
+extern u64 spot07_scene_00005798_CITex[TEX_LEN(u64, spot07_scene_00005798_CITex_WIDTH, spot07_scene_00005798_CITex_HEIGHT, 4)];
+#define spot07_scene_00005B98_CITex_WIDTH 64
+#define spot07_scene_00005B98_CITex_HEIGHT 32
+extern u64 spot07_scene_00005B98_CITex[TEX_LEN(u64, spot07_scene_00005B98_CITex_WIDTH, spot07_scene_00005B98_CITex_HEIGHT, 4)];
+#define spot07_scene_00005F98_CITex_WIDTH 64
+#define spot07_scene_00005F98_CITex_HEIGHT 32
+extern u64 spot07_scene_00005F98_CITex[TEX_LEN(u64, spot07_scene_00005F98_CITex_WIDTH, spot07_scene_00005F98_CITex_HEIGHT, 4)];
+#define spot07_scene_00006398_CITex_WIDTH 64
+#define spot07_scene_00006398_CITex_HEIGHT 32
+extern u64 spot07_scene_00006398_CITex[TEX_LEN(u64, spot07_scene_00006398_CITex_WIDTH, spot07_scene_00006398_CITex_HEIGHT, 4)];
+#define spot07_scene_00006798_CITex_WIDTH 64
+#define spot07_scene_00006798_CITex_HEIGHT 32
+extern u64 spot07_scene_00006798_CITex[TEX_LEN(u64, spot07_scene_00006798_CITex_WIDTH, spot07_scene_00006798_CITex_HEIGHT, 4)];
+#define spot07_scene_00006B98_CITex_WIDTH 64
+#define spot07_scene_00006B98_CITex_HEIGHT 32
+extern u64 spot07_scene_00006B98_CITex[TEX_LEN(u64, spot07_scene_00006B98_CITex_WIDTH, spot07_scene_00006B98_CITex_HEIGHT, 4)];
+#define spot07_scene_00006F98_Tex_WIDTH 32
+#define spot07_scene_00006F98_Tex_HEIGHT 32
+extern u64 spot07_scene_00006F98_Tex[TEX_LEN(u64, spot07_scene_00006F98_Tex_WIDTH, spot07_scene_00006F98_Tex_HEIGHT, 16)];
+#define spot07_scene_00007798_CITex_WIDTH 64
+#define spot07_scene_00007798_CITex_HEIGHT 32
+extern u64 spot07_scene_00007798_CITex[TEX_LEN(u64, spot07_scene_00007798_CITex_WIDTH, spot07_scene_00007798_CITex_HEIGHT, 4)];
+#define spot07_scene_00007B98_CITex_WIDTH 64
+#define spot07_scene_00007B98_CITex_HEIGHT 32
+extern u64 spot07_scene_00007B98_CITex[TEX_LEN(u64, spot07_scene_00007B98_CITex_WIDTH, spot07_scene_00007B98_CITex_HEIGHT, 4)];
+#define spot07_scene_00007F98_Tex_WIDTH 32
+#define spot07_scene_00007F98_Tex_HEIGHT 32
+extern u64 spot07_scene_00007F98_Tex[TEX_LEN(u64, spot07_scene_00007F98_Tex_WIDTH, spot07_scene_00007F98_Tex_HEIGHT, 16)];
+#define spot07_scene_00008798_Tex_WIDTH 64
+#define spot07_scene_00008798_Tex_HEIGHT 64
+extern u64 spot07_scene_00008798_Tex[TEX_LEN(u64, spot07_scene_00008798_Tex_WIDTH, spot07_scene_00008798_Tex_HEIGHT, 4)];
+#define gZorasDomainDayEntranceTex_WIDTH 8
+#define gZorasDomainDayEntranceTex_HEIGHT 8
+extern u64 gZorasDomainDayEntranceTex[TEX_LEN(u64, gZorasDomainDayEntranceTex_WIDTH, gZorasDomainDayEntranceTex_HEIGHT, 8)];
+#define gZorasDomainNightEntranceTex_WIDTH 8
+#define gZorasDomainNightEntranceTex_HEIGHT 8
+extern u64 gZorasDomainNightEntranceTex[TEX_LEN(u64, gZorasDomainNightEntranceTex_WIDTH, gZorasDomainNightEntranceTex_HEIGHT, 8)];
+#define spot07_scene_00009018_CITex_WIDTH 64
+#define spot07_scene_00009018_CITex_HEIGHT 32
+extern u64 spot07_scene_00009018_CITex[TEX_LEN(u64, spot07_scene_00009018_CITex_WIDTH, spot07_scene_00009018_CITex_HEIGHT, 4)];
+#define spot07_scene_00009418_CITex_WIDTH 64
+#define spot07_scene_00009418_CITex_HEIGHT 32
+extern u64 spot07_scene_00009418_CITex[TEX_LEN(u64, spot07_scene_00009418_CITex_WIDTH, spot07_scene_00009418_CITex_HEIGHT, 4)];
+
+#endif

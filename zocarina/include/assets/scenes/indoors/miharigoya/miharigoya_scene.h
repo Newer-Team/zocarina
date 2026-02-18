@@ -1,0 +1,95 @@
+#ifndef MIHARIGOYA_SCENE_H
+#define MIHARIGOYA_SCENE_H
+
+#include "bgcheck.h"
+#include "environment.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd miharigoya_scene[];
+extern SceneCmd* miharigoya_scene_02000068_AltHeaders[];
+#define LENGTH_miharigoya_scene_02000074_PlayerEntryList 1
+extern ActorEntry miharigoya_scene_02000074_PlayerEntryList[LENGTH_miharigoya_scene_02000074_PlayerEntryList];
+#define LENGTH_miharigoya_scene_02000084_TransitionActorEntryList 1
+extern TransitionActorEntry miharigoya_scene_02000084_TransitionActorEntryList[LENGTH_miharigoya_scene_02000084_TransitionActorEntryList];
+#define LENGTH_miharigoya_scene_02000094_RoomList 1
+extern RomFile miharigoya_scene_02000094_RoomList[LENGTH_miharigoya_scene_02000094_RoomList];
+extern Spawn miharigoya_scene_0200009C_SpawnList[];
+extern s16 miharigoya_scene_020000A0_ExitList[];
+#define LENGTH_miharigoya_scene_020000A4_EnvLightSettingsList 4
+extern EnvLightSettings miharigoya_scene_020000A4_EnvLightSettingsList[LENGTH_miharigoya_scene_020000A4_EnvLightSettingsList];
+extern BgCamInfo miharigoya_scene_02000B28_BgCamList[];
+extern SurfaceType miharigoya_scene_02000B28_SurfaceTypes[];
+extern CollisionPoly miharigoya_scene_02000B28_PolyList[];
+extern Vec3s miharigoya_scene_02000B28_VtxList[];
+extern CollisionHeader miharigoya_scene_02000B28_Col;
+extern SceneCmd miharigoya_scene_02000068_AltHeaders_02000B60_Cmds[];
+#define LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BC0_PlayerEntryList 1
+extern ActorEntry miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BC0_PlayerEntryList[LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BC0_PlayerEntryList];
+#define LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BD0_TransitionActorEntryList 1
+extern TransitionActorEntry miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BD0_TransitionActorEntryList[LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BD0_TransitionActorEntryList];
+#define LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BE0_RoomList 1
+extern RomFile miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BE0_RoomList[LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BE0_RoomList];
+extern Spawn miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BE8_SpawnList[];
+extern s16 miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BEC_ExitList[];
+#define LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BF0_EnvLightSettingsList 4
+extern EnvLightSettings miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BF0_EnvLightSettingsList[LENGTH_miharigoya_scene_02000068_AltHeaders_02000B60_Cmds_02000BF0_EnvLightSettingsList];
+#define miharigoya_scene_00000C50_Tex_WIDTH 64
+#define miharigoya_scene_00000C50_Tex_HEIGHT 16
+extern u64 miharigoya_scene_00000C50_Tex[TEX_LEN(u64, miharigoya_scene_00000C50_Tex_WIDTH, miharigoya_scene_00000C50_Tex_HEIGHT, 8)];
+#define miharigoya_scene_00001050_Tex_WIDTH 32
+#define miharigoya_scene_00001050_Tex_HEIGHT 4
+extern u64 miharigoya_scene_00001050_Tex[TEX_LEN(u64, miharigoya_scene_00001050_Tex_WIDTH, miharigoya_scene_00001050_Tex_HEIGHT, 16)];
+#define miharigoya_scene_00001150_Tex_WIDTH 32
+#define miharigoya_scene_00001150_Tex_HEIGHT 16
+extern u64 miharigoya_scene_00001150_Tex[TEX_LEN(u64, miharigoya_scene_00001150_Tex_WIDTH, miharigoya_scene_00001150_Tex_HEIGHT, 8)];
+#define gGuardHouseOutSideView2NightTex_WIDTH 64
+#define gGuardHouseOutSideView2NightTex_HEIGHT 32
+extern u64 gGuardHouseOutSideView2NightTex[TEX_LEN(u64, gGuardHouseOutSideView2NightTex_WIDTH, gGuardHouseOutSideView2NightTex_HEIGHT, 16)];
+#define gGuardHouseOutSideView2DayTex_WIDTH 64
+#define gGuardHouseOutSideView2DayTex_HEIGHT 32
+extern u64 gGuardHouseOutSideView2DayTex[TEX_LEN(u64, gGuardHouseOutSideView2DayTex_WIDTH, gGuardHouseOutSideView2DayTex_HEIGHT, 16)];
+#define miharigoya_scene_00003350_Tex_WIDTH 32
+#define miharigoya_scene_00003350_Tex_HEIGHT 8
+extern u64 miharigoya_scene_00003350_Tex[TEX_LEN(u64, miharigoya_scene_00003350_Tex_WIDTH, miharigoya_scene_00003350_Tex_HEIGHT, 16)];
+#define gGuardHouseOutSideView1NightTex_WIDTH 64
+#define gGuardHouseOutSideView1NightTex_HEIGHT 32
+extern u64 gGuardHouseOutSideView1NightTex[TEX_LEN(u64, gGuardHouseOutSideView1NightTex_WIDTH, gGuardHouseOutSideView1NightTex_HEIGHT, 16)];
+#define miharigoya_scene_00004550_Tex_WIDTH 32
+#define miharigoya_scene_00004550_Tex_HEIGHT 32
+extern u64 miharigoya_scene_00004550_Tex[TEX_LEN(u64, miharigoya_scene_00004550_Tex_WIDTH, miharigoya_scene_00004550_Tex_HEIGHT, 8)];
+#define miharigoya_scene_00004950_Tex_WIDTH 64
+#define miharigoya_scene_00004950_Tex_HEIGHT 32
+extern u64 miharigoya_scene_00004950_Tex[TEX_LEN(u64, miharigoya_scene_00004950_Tex_WIDTH, miharigoya_scene_00004950_Tex_HEIGHT, 16)];
+#define miharigoya_scene_00005950_Tex_WIDTH 32
+#define miharigoya_scene_00005950_Tex_HEIGHT 32
+extern u64 miharigoya_scene_00005950_Tex[TEX_LEN(u64, miharigoya_scene_00005950_Tex_WIDTH, miharigoya_scene_00005950_Tex_HEIGHT, 8)];
+#define miharigoya_scene_00005D50_Tex_WIDTH 64
+#define miharigoya_scene_00005D50_Tex_HEIGHT 16
+extern u64 miharigoya_scene_00005D50_Tex[TEX_LEN(u64, miharigoya_scene_00005D50_Tex_WIDTH, miharigoya_scene_00005D50_Tex_HEIGHT, 16)];
+#define gGuardHouseOutSideView1DayTex_WIDTH 64
+#define gGuardHouseOutSideView1DayTex_HEIGHT 32
+extern u64 gGuardHouseOutSideView1DayTex[TEX_LEN(u64, gGuardHouseOutSideView1DayTex_WIDTH, gGuardHouseOutSideView1DayTex_HEIGHT, 16)];
+#define miharigoya_scene_00007550_Tex_WIDTH 32
+#define miharigoya_scene_00007550_Tex_HEIGHT 64
+extern u64 miharigoya_scene_00007550_Tex[TEX_LEN(u64, miharigoya_scene_00007550_Tex_WIDTH, miharigoya_scene_00007550_Tex_HEIGHT, 16)];
+#define miharigoya_scene_00008550_Tex_WIDTH 64
+#define miharigoya_scene_00008550_Tex_HEIGHT 64
+extern u64 miharigoya_scene_00008550_Tex[TEX_LEN(u64, miharigoya_scene_00008550_Tex_WIDTH, miharigoya_scene_00008550_Tex_HEIGHT, 4)];
+#define miharigoya_scene_00008D50_Tex_WIDTH 64
+#define miharigoya_scene_00008D50_Tex_HEIGHT 64
+extern u64 miharigoya_scene_00008D50_Tex[TEX_LEN(u64, miharigoya_scene_00008D50_Tex_WIDTH, miharigoya_scene_00008D50_Tex_HEIGHT, 8)];
+#define miharigoya_scene_00009D50_Tex_WIDTH 32
+#define miharigoya_scene_00009D50_Tex_HEIGHT 64
+extern u64 miharigoya_scene_00009D50_Tex[TEX_LEN(u64, miharigoya_scene_00009D50_Tex_WIDTH, miharigoya_scene_00009D50_Tex_HEIGHT, 16)];
+#define miharigoya_scene_0000AD50_Tex_WIDTH 64
+#define miharigoya_scene_0000AD50_Tex_HEIGHT 64
+extern u64 miharigoya_scene_0000AD50_Tex[TEX_LEN(u64, miharigoya_scene_0000AD50_Tex_WIDTH, miharigoya_scene_0000AD50_Tex_HEIGHT, 8)];
+#define miharigoya_scene_0000BD50_Tex_WIDTH 32
+#define miharigoya_scene_0000BD50_Tex_HEIGHT 32
+extern u64 miharigoya_scene_0000BD50_Tex[TEX_LEN(u64, miharigoya_scene_0000BD50_Tex_WIDTH, miharigoya_scene_0000BD50_Tex_HEIGHT, 16)];
+
+#endif

@@ -1,0 +1,96 @@
+#ifndef GANON_BOSS_SCENE_H
+#define GANON_BOSS_SCENE_H
+
+#include "bgcheck.h"
+#include "environment.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd ganon_boss_scene[];
+#define LENGTH_ganon_boss_scene_02000060_PlayerEntryList 1
+extern ActorEntry ganon_boss_scene_02000060_PlayerEntryList[LENGTH_ganon_boss_scene_02000060_PlayerEntryList];
+#define LENGTH_ganon_boss_scene_02000070_TransitionActorEntryList 1
+extern TransitionActorEntry ganon_boss_scene_02000070_TransitionActorEntryList[LENGTH_ganon_boss_scene_02000070_TransitionActorEntryList];
+#define LENGTH_ganon_boss_scene_02000080_RoomList 1
+extern RomFile ganon_boss_scene_02000080_RoomList[LENGTH_ganon_boss_scene_02000080_RoomList];
+extern Spawn ganon_boss_scene_02000088_SpawnList[];
+extern s16 ganon_boss_scene_0200008C_ExitList[];
+#define LENGTH_ganon_boss_scene_02000090_EnvLightSettingsList 17
+extern EnvLightSettings ganon_boss_scene_02000090_EnvLightSettingsList[LENGTH_ganon_boss_scene_02000090_EnvLightSettingsList];
+extern BgCamInfo ganon_boss_scene_02001520_BgCamList[];
+extern SurfaceType ganon_boss_scene_02001520_SurfaceTypes[];
+extern CollisionPoly ganon_boss_scene_02001520_PolyList[];
+extern Vec3s ganon_boss_scene_02001520_VtxList[];
+extern CollisionHeader ganon_boss_scene_02001520_Col;
+//#define ganon_boss_scene_00001550_TLUT_TLUT_COUNT 100
+extern u64 ganon_boss_scene_00001550_TLUT[];
+extern u8 ganon_boss_scene_unaccounted_001618[];
+//#define ganon_boss_scene_00001620_TLUT_TLUT_COUNT 48
+extern u64 ganon_boss_scene_00001620_TLUT[];
+//#define ganon_boss_sceneTLUT_001680_TLUT_COUNT 256
+extern u64 ganon_boss_sceneTLUT_001680[];
+extern u8 ganon_boss_scene_unaccounted_001880[];
+//#define ganon_boss_scene_00001888_TLUT_TLUT_COUNT 256
+extern u64 ganon_boss_scene_00001888_TLUT[];
+extern u8 ganon_boss_scene_unaccounted_001A88[];
+//#define ganon_boss_scene_00001A90_TLUT_TLUT_COUNT 224
+extern u64 ganon_boss_scene_00001A90_TLUT[];
+//#define ganon_boss_scene_00001C50_TLUT_TLUT_COUNT 256
+extern u64 ganon_boss_scene_00001C50_TLUT[];
+extern u8 ganon_boss_scene_unaccounted_001E50[];
+#define ganon_boss_scene_00001E58_CITex_WIDTH 32
+#define ganon_boss_scene_00001E58_CITex_HEIGHT 64
+extern u64 ganon_boss_scene_00001E58_CITex[TEX_LEN(u64, ganon_boss_scene_00001E58_CITex_WIDTH, ganon_boss_scene_00001E58_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00002658_CITex_WIDTH 16
+#define ganon_boss_scene_00002658_CITex_HEIGHT 16
+extern u64 ganon_boss_scene_00002658_CITex[TEX_LEN(u64, ganon_boss_scene_00002658_CITex_WIDTH, ganon_boss_scene_00002658_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00002758_CITex_WIDTH 8
+#define ganon_boss_scene_00002758_CITex_HEIGHT 8
+extern u64 ganon_boss_scene_00002758_CITex[TEX_LEN(u64, ganon_boss_scene_00002758_CITex_WIDTH, ganon_boss_scene_00002758_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00002798_CITex_WIDTH 32
+#define ganon_boss_scene_00002798_CITex_HEIGHT 32
+extern u64 ganon_boss_scene_00002798_CITex[TEX_LEN(u64, ganon_boss_scene_00002798_CITex_WIDTH, ganon_boss_scene_00002798_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00002B98_CITex_WIDTH 16
+#define ganon_boss_scene_00002B98_CITex_HEIGHT 8
+extern u64 ganon_boss_scene_00002B98_CITex[TEX_LEN(u64, ganon_boss_scene_00002B98_CITex_WIDTH, ganon_boss_scene_00002B98_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00002C18_Tex_WIDTH 32
+#define ganon_boss_scene_00002C18_Tex_HEIGHT 64
+extern u64 ganon_boss_scene_00002C18_Tex[TEX_LEN(u64, ganon_boss_scene_00002C18_Tex_WIDTH, ganon_boss_scene_00002C18_Tex_HEIGHT, 16)];
+#define ganon_boss_scene_00003C18_CITex_WIDTH 32
+#define ganon_boss_scene_00003C18_CITex_HEIGHT 32
+extern u64 ganon_boss_scene_00003C18_CITex[TEX_LEN(u64, ganon_boss_scene_00003C18_CITex_WIDTH, ganon_boss_scene_00003C18_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00004018_CITex_WIDTH 32
+#define ganon_boss_scene_00004018_CITex_HEIGHT 32
+extern u64 ganon_boss_scene_00004018_CITex[TEX_LEN(u64, ganon_boss_scene_00004018_CITex_WIDTH, ganon_boss_scene_00004018_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00004418_CITex_WIDTH 32
+#define ganon_boss_scene_00004418_CITex_HEIGHT 32
+extern u64 ganon_boss_scene_00004418_CITex[TEX_LEN(u64, ganon_boss_scene_00004418_CITex_WIDTH, ganon_boss_scene_00004418_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00004818_CITex_WIDTH 32
+#define ganon_boss_scene_00004818_CITex_HEIGHT 32
+extern u64 ganon_boss_scene_00004818_CITex[TEX_LEN(u64, ganon_boss_scene_00004818_CITex_WIDTH, ganon_boss_scene_00004818_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00004C18_CITex_WIDTH 32
+#define ganon_boss_scene_00004C18_CITex_HEIGHT 32
+extern u64 ganon_boss_scene_00004C18_CITex[TEX_LEN(u64, ganon_boss_scene_00004C18_CITex_WIDTH, ganon_boss_scene_00004C18_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00005018_Tex_WIDTH 32
+#define ganon_boss_scene_00005018_Tex_HEIGHT 32
+extern u64 ganon_boss_scene_00005018_Tex[TEX_LEN(u64, ganon_boss_scene_00005018_Tex_WIDTH, ganon_boss_scene_00005018_Tex_HEIGHT, 16)];
+#define ganon_boss_scene_00005818_CITex_WIDTH 32
+#define ganon_boss_scene_00005818_CITex_HEIGHT 64
+extern u64 ganon_boss_scene_00005818_CITex[TEX_LEN(u64, ganon_boss_scene_00005818_CITex_WIDTH, ganon_boss_scene_00005818_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00006018_CITex_WIDTH 16
+#define ganon_boss_scene_00006018_CITex_HEIGHT 64
+extern u64 ganon_boss_scene_00006018_CITex[TEX_LEN(u64, ganon_boss_scene_00006018_CITex_WIDTH, ganon_boss_scene_00006018_CITex_HEIGHT, 8)];
+#define ganon_boss_scene_00006418_CITex_WIDTH 32
+#define ganon_boss_scene_00006418_CITex_HEIGHT 64
+extern u64 ganon_boss_scene_00006418_CITex[TEX_LEN(u64, ganon_boss_scene_00006418_CITex_WIDTH, ganon_boss_scene_00006418_CITex_HEIGHT, 8)];
+#define ganon_boss_sceneTex_006C18_WIDTH 32
+#define ganon_boss_sceneTex_006C18_HEIGHT 64
+extern u64 ganon_boss_sceneTex_006C18[TEX_LEN(u64, ganon_boss_sceneTex_006C18_WIDTH, ganon_boss_sceneTex_006C18_HEIGHT, 8)];
+#define ganon_boss_sceneTex_007418_WIDTH 32
+#define ganon_boss_sceneTex_007418_HEIGHT 64
+extern u64 ganon_boss_sceneTex_007418[TEX_LEN(u64, ganon_boss_sceneTex_007418_WIDTH, ganon_boss_sceneTex_007418_HEIGHT, 8)];
+
+#endif

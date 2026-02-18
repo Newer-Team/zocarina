@@ -1,0 +1,33 @@
+#ifndef DDAN_BOSS_ROOM_1_H
+#define DDAN_BOSS_ROOM_1_H
+
+#include "room.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+
+extern SceneCmd ddan_boss_room_1[];
+#define LENGTH_ddan_boss_room_1_03000040_ObjectList 6
+extern s16 ddan_boss_room_1_03000040_ObjectList[LENGTH_ddan_boss_room_1_03000040_ObjectList];
+#define LENGTH_ddan_boss_room_1_0300004C_ActorEntryList 8
+extern ActorEntry ddan_boss_room_1_0300004C_ActorEntryList[LENGTH_ddan_boss_room_1_0300004C_ActorEntryList];
+extern RoomShapeNormal ddan_boss_room_1_030000D0_RoomShapeNormal;
+#define LENGTH_ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries 1
+extern RoomShapeDListsEntry ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries[LENGTH_ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries];
+extern u8 ddan_boss_room_1_unaccounted_0000E4[];
+extern Vtx ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries_030021B0_DL_03000A40_DL_030000F0_Vtx_fused_[];
+extern Gfx ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries_030021B0_DL_03000A40_DL[129];
+extern Vtx ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries_030021B0_DL_03001A28_DL_03000E48_Vtx_fused_[];
+extern Gfx ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries_030021B0_DL_03001A28_DL[241];
+extern Gfx ddan_boss_room_1_030000D0_RoomShapeNormal_030000DC_DListsEntries_030021B0_DL[3];
+#define gDodongosCavernBossLavaFloorTex_WIDTH 32
+#define gDodongosCavernBossLavaFloorTex_HEIGHT 64
+extern u64 gDodongosCavernBossLavaFloorTex[TEX_LEN(u64, gDodongosCavernBossLavaFloorTex_WIDTH, gDodongosCavernBossLavaFloorTex_HEIGHT, 16)];
+#define ddan_boss_room_1_000031C8_CITex_WIDTH 32
+#define ddan_boss_room_1_000031C8_CITex_HEIGHT 64
+extern u64 ddan_boss_room_1_000031C8_CITex[TEX_LEN(u64, ddan_boss_room_1_000031C8_CITex_WIDTH, ddan_boss_room_1_000031C8_CITex_HEIGHT, 8)];
+#define ddan_boss_room_1_000039C8_CITex_WIDTH 32
+#define ddan_boss_room_1_000039C8_CITex_HEIGHT 32
+extern u64 ddan_boss_room_1_000039C8_CITex[TEX_LEN(u64, ddan_boss_room_1_000039C8_CITex_WIDTH, ddan_boss_room_1_000039C8_CITex_HEIGHT, 8)];
+
+#endif

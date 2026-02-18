@@ -1,0 +1,264 @@
+#ifndef OBJECT_HAKA_OBJECTS_H
+#define OBJECT_HAKA_OBJECTS_H
+
+#include "bgcheck.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern Vtx object_haka_objects_Vtx_000000[];
+extern Gfx object_haka_objects_DL_000040[18];
+extern BgCamInfo object_haka_objects_Col_000118_060000D0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_000118_060000D8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_000118_060000E0_PolyList[];
+extern Vec3s object_haka_objects_Col_000118_06000100_VtxList[];
+extern CollisionHeader object_haka_objects_Col_000118;
+extern Vtx object_haka_objects_Vtx_000150[];
+extern Gfx object_haka_objects_DL_001120[102];
+extern Vtx object_haka_objects_Vtx_001450[];
+extern Gfx object_haka_objects_DL_0018F0[63];
+extern Vtx object_haka_objects_Vtx_001AF0[];
+extern Gfx object_haka_objects_DL_002ED0[132];
+extern Vtx object_haka_objects_Vtx_0032F0[];
+extern Gfx object_haka_objects_DL_003CF0[79];
+extern Vtx object_haka_objects_Vtx_003F70[];
+extern Gfx object_haka_objects_DL_0040F0[55];
+extern BgCamInfo object_haka_objects_Col_004330_060042B0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_004330_060042B8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_004330_060042C0_PolyList[];
+extern Vec3s object_haka_objects_Col_004330_06004300_VtxList[];
+extern CollisionHeader object_haka_objects_Col_004330;
+extern Vtx object_haka_objects_Vtx_004360[];
+extern Gfx object_haka_objects_DL_0043B0[19];
+extern BgCamInfo object_haka_objects_Col_0044D0_06004450_BgCamList[];
+extern SurfaceType object_haka_objects_Col_0044D0_06004458_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_0044D0_06004460_PolyList[];
+extern Vec3s object_haka_objects_Col_0044D0_060044A0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_0044D0;
+extern Vtx object_haka_objects_Vtx_004500[];
+extern Gfx object_haka_objects_DL_0045A0[29];
+extern BgCamInfo object_haka_objects_Col_004780_06004690_BgCamList[];
+extern SurfaceType object_haka_objects_Col_004780_06004698_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_004780_060046A0_PolyList[];
+extern Vec3s object_haka_objects_Col_004780_06004720_VtxList[];
+extern CollisionHeader object_haka_objects_Col_004780;
+extern Vtx object_haka_objects_Vtx_0047B0[];
+extern Gfx object_haka_objects_DL_0047F0[26];
+extern BgCamInfo object_haka_objects_Col_004940_060048C0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_004940_060048C8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_004940_060048D0_PolyList[];
+extern Vec3s object_haka_objects_Col_004940_06004910_VtxList[];
+extern CollisionHeader object_haka_objects_Col_004940;
+extern Vtx object_haka_objects_Vtx_004970[];
+extern Gfx object_haka_objects_DL_0049B0[26];
+extern BgCamInfo object_haka_objects_Col_004B00_06004A80_BgCamList[];
+extern SurfaceType object_haka_objects_Col_004B00_06004A88_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_004B00_06004A90_PolyList[];
+extern Vec3s object_haka_objects_Col_004B00_06004AD0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_004B00;
+extern Vtx object_haka_objects_Vtx_004B30[];
+extern Gfx object_haka_objects_DL_004B70[26];
+extern BgCamInfo object_haka_objects_Col_004CC0_06004C40_BgCamList[];
+extern SurfaceType object_haka_objects_Col_004CC0_06004C48_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_004CC0_06004C50_PolyList[];
+extern Vec3s object_haka_objects_Col_004CC0_06004C90_VtxList[];
+extern CollisionHeader object_haka_objects_Col_004CC0;
+extern Vtx object_haka_objects_Vtx_004CF0[];
+extern Gfx object_haka_objects_DL_005000[38];
+extern BgCamInfo object_haka_objects_Col_005334_06005130_BgCamList[];
+extern SurfaceType object_haka_objects_Col_005334_06005138_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_005334_06005140_PolyList[];
+extern Vec3s object_haka_objects_Col_005334_060052C0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_005334;
+extern Vtx object_haka_objects_Vtx_005360[];
+extern Gfx object_haka_objects_DL_005A70[67];
+extern Vtx object_haka_objects_Vtx_005C90[];
+extern Gfx object_haka_objects_DL_005CE0[27];
+extern BgCamInfo object_haka_objects_Col_005E30_06005DC0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_005E30_06005DC8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_005E30_06005DD0_PolyList[];
+extern Vec3s object_haka_objects_Col_005E30_06005E10_VtxList[];
+extern CollisionHeader object_haka_objects_Col_005E30;
+extern Vtx object_haka_objects_Vtx_005E60[];
+extern Gfx object_haka_objects_DL_0064E0[93];
+extern BgCamInfo object_haka_objects_Col_006F70_060067D0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_006F70_060067D8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_006F70_060067E0_PolyList[];
+extern Vec3s object_haka_objects_Col_006F70_06006E30_VtxList[];
+extern CollisionHeader object_haka_objects_Col_006F70;
+extern Vtx object_haka_objects_Vtx_006FA0[];
+extern Gfx object_haka_objects_DL_0072C0[62];
+extern Vtx object_haka_objects_Vtx_0074B0[];
+extern Gfx object_haka_objects_DL_007610[44];
+extern Vtx object_haka_objects_Vtx_007770[];
+extern Gfx object_haka_objects_DL_007EF0[75];
+extern BgCamInfo object_haka_objects_Col_0081D0_06008150_BgCamList[];
+extern SurfaceType object_haka_objects_Col_0081D0_06008158_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_0081D0_06008160_PolyList[];
+extern Vec3s object_haka_objects_Col_0081D0_060081A0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_0081D0;
+extern Vtx object_haka_objects_Vtx_008200[];
+extern Gfx object_haka_objects_DL_008A20[78];
+extern BgCamInfo object_haka_objects_Col_008D10_06008C90_BgCamList[];
+extern SurfaceType object_haka_objects_Col_008D10_06008C98_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_008D10_06008CA0_PolyList[];
+extern Vec3s object_haka_objects_Col_008D10_06008CE0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_008D10;
+extern Vtx object_haka_objects_Vtx_008D40[];
+extern Gfx object_haka_objects_DL_008EB0[49];
+extern BgCamInfo object_haka_objects_Col_009168_06009040_BgCamList[];
+extern SurfaceType object_haka_objects_Col_009168_06009048_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_009168_06009050_PolyList[];
+extern Vec3s object_haka_objects_Col_009168_06009130_VtxList[];
+extern CollisionHeader object_haka_objects_Col_009168;
+extern Vtx object_haka_objects_Vtx_0091A0[];
+extern Gfx object_haka_objects_DL_009860[76];
+extern BgCamInfo object_haka_objects_Col_009CD0_06009AC0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_009CD0_06009AC8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_009CD0_06009AD8_PolyList[];
+extern Vec3s object_haka_objects_Col_009CD0_06009C58_VtxList[];
+extern CollisionHeader object_haka_objects_Col_009CD0;
+extern Vtx object_haka_objects_Vtx_009D00[];
+extern Gfx object_haka_objects_DL_00A1A0[88];
+extern BgCamInfo object_haka_objects_Col_00A7F4_0600A460_BgCamList[];
+extern SurfaceType object_haka_objects_Col_00A7F4_0600A468_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_00A7F4_0600A470_PolyList[];
+extern Vec3s object_haka_objects_Col_00A7F4_0600A6F0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_00A7F4;
+extern Vtx object_haka_objects_Vtx_00A820[];
+extern Gfx object_haka_objects_DL_00A860[18];
+extern BgCamInfo object_haka_objects_Col_00A938_0600A8F0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_00A938_0600A8F8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_00A938_0600A900_PolyList[];
+extern Vec3s object_haka_objects_Col_00A938_0600A920_VtxList[];
+extern CollisionHeader object_haka_objects_Col_00A938;
+extern Vtx object_haka_objects_Vtx_00A970[];
+extern Gfx object_haka_objects_DL_00BF20[156];
+extern Vtx object_haka_objects_Vtx_00C400[];
+extern Gfx object_haka_objects_DL_00D330[235];
+extern BgCamInfo object_haka_objects_Col_00E408_0600DA90_BgCamList[];
+extern SurfaceType object_haka_objects_Col_00E408_0600DA98_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_00E408_0600DAA0_PolyList[];
+extern Vec3s object_haka_objects_Col_00E408_0600E240_VtxList[];
+extern CollisionHeader object_haka_objects_Col_00E408;
+extern Vtx object_haka_objects_Vtx_00E440[];
+extern Gfx object_haka_objects_DL_00E910[38];
+extern BgCamInfo object_haka_objects_Col_00ED7C_0600EA40_BgCamList[];
+extern SurfaceType object_haka_objects_Col_00ED7C_0600EA48_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_00ED7C_0600EA58_PolyList[];
+extern Vec3s object_haka_objects_Col_00ED7C_0600EC98_VtxList[];
+extern CollisionHeader object_haka_objects_Col_00ED7C;
+extern Vtx object_haka_objects_Vtx_00EDB0[];
+extern Gfx object_haka_objects_DL_00F1B0[66];
+extern Vtx object_haka_objects_Vtx_00F3C0[];
+extern Gfx object_haka_objects_DL_00FE40[101];
+extern BgCamInfo object_haka_objects_Col_0108B8_06010170_BgCamList[];
+extern SurfaceType object_haka_objects_Col_0108B8_06010178_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_0108B8_06010180_PolyList[];
+extern Vec3s object_haka_objects_Col_0108B8_06010780_VtxList[];
+extern CollisionHeader object_haka_objects_Col_0108B8;
+extern Vtx object_haka_objects_Vtx_0108F0[];
+extern Gfx object_haka_objects_DL_010A10[28];
+extern Vtx object_haka_objects_Vtx_010AF0[];
+extern Gfx object_haka_objects_DL_010C10[28];
+extern BgCamInfo object_haka_objects_Col_010E10_06010CF0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_010E10_06010CF8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_010E10_06010D00_PolyList[];
+extern Vec3s object_haka_objects_Col_010E10_06010DC0_VtxList[];
+extern CollisionHeader object_haka_objects_Col_010E10;
+extern Vtx object_haka_objects_Vtx_010E40[];
+extern Gfx object_haka_objects_DL_012270[262];
+extern BgCamInfo object_haka_objects_Col_0131C4_06012AA0_BgCamList[];
+extern SurfaceType object_haka_objects_Col_0131C4_06012AA8_SurfaceTypes[];
+extern CollisionPoly object_haka_objects_Col_0131C4_06012AB8_PolyList[];
+extern Vec3s object_haka_objects_Col_0131C4_06013048_VtxList[];
+extern CollisionHeader object_haka_objects_Col_0131C4;
+#define object_haka_objects_Tex_0131F0_WIDTH 32
+#define object_haka_objects_Tex_0131F0_HEIGHT 32
+extern u64 object_haka_objects_Tex_0131F0[TEX_LEN(u64, object_haka_objects_Tex_0131F0_WIDTH, object_haka_objects_Tex_0131F0_HEIGHT, 8)];
+#define object_haka_objects_Tex_0135F0_WIDTH 32
+#define object_haka_objects_Tex_0135F0_HEIGHT 32
+extern u64 object_haka_objects_Tex_0135F0[TEX_LEN(u64, object_haka_objects_Tex_0135F0_WIDTH, object_haka_objects_Tex_0135F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_013DF0_WIDTH 32
+#define object_haka_objects_Tex_013DF0_HEIGHT 32
+extern u64 object_haka_objects_Tex_013DF0[TEX_LEN(u64, object_haka_objects_Tex_013DF0_WIDTH, object_haka_objects_Tex_013DF0_HEIGHT, 16)];
+#define object_haka_objects_Tex_0145F0_WIDTH 32
+#define object_haka_objects_Tex_0145F0_HEIGHT 64
+extern u64 object_haka_objects_Tex_0145F0[TEX_LEN(u64, object_haka_objects_Tex_0145F0_WIDTH, object_haka_objects_Tex_0145F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_0155F0_WIDTH 32
+#define object_haka_objects_Tex_0155F0_HEIGHT 64
+extern u64 object_haka_objects_Tex_0155F0[TEX_LEN(u64, object_haka_objects_Tex_0155F0_WIDTH, object_haka_objects_Tex_0155F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_0165F0_WIDTH 32
+#define object_haka_objects_Tex_0165F0_HEIGHT 8
+extern u64 object_haka_objects_Tex_0165F0[TEX_LEN(u64, object_haka_objects_Tex_0165F0_WIDTH, object_haka_objects_Tex_0165F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_0167F0_WIDTH 32
+#define object_haka_objects_Tex_0167F0_HEIGHT 16
+extern u64 object_haka_objects_Tex_0167F0[TEX_LEN(u64, object_haka_objects_Tex_0167F0_WIDTH, object_haka_objects_Tex_0167F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_016BF0_WIDTH 32
+#define object_haka_objects_Tex_016BF0_HEIGHT 32
+extern u64 object_haka_objects_Tex_016BF0[TEX_LEN(u64, object_haka_objects_Tex_016BF0_WIDTH, object_haka_objects_Tex_016BF0_HEIGHT, 4)];
+#define object_haka_objects_Tex_016DF0_WIDTH 32
+#define object_haka_objects_Tex_016DF0_HEIGHT 32
+extern u64 object_haka_objects_Tex_016DF0[TEX_LEN(u64, object_haka_objects_Tex_016DF0_WIDTH, object_haka_objects_Tex_016DF0_HEIGHT, 4)];
+#define object_haka_objects_Tex_016FF0_WIDTH 32
+#define object_haka_objects_Tex_016FF0_HEIGHT 32
+extern u64 object_haka_objects_Tex_016FF0[TEX_LEN(u64, object_haka_objects_Tex_016FF0_WIDTH, object_haka_objects_Tex_016FF0_HEIGHT, 4)];
+#define object_haka_objects_Tex_0171F0_WIDTH 32
+#define object_haka_objects_Tex_0171F0_HEIGHT 32
+extern u64 object_haka_objects_Tex_0171F0[TEX_LEN(u64, object_haka_objects_Tex_0171F0_WIDTH, object_haka_objects_Tex_0171F0_HEIGHT, 4)];
+#define object_haka_objects_Tex_0173F0_WIDTH 32
+#define object_haka_objects_Tex_0173F0_HEIGHT 32
+extern u64 object_haka_objects_Tex_0173F0[TEX_LEN(u64, object_haka_objects_Tex_0173F0_WIDTH, object_haka_objects_Tex_0173F0_HEIGHT, 4)];
+#define object_haka_objects_Tex_0175F0_WIDTH 32
+#define object_haka_objects_Tex_0175F0_HEIGHT 32
+extern u64 object_haka_objects_Tex_0175F0[TEX_LEN(u64, object_haka_objects_Tex_0175F0_WIDTH, object_haka_objects_Tex_0175F0_HEIGHT, 4)];
+#define object_haka_objects_Tex_0177F0_WIDTH 32
+#define object_haka_objects_Tex_0177F0_HEIGHT 32
+extern u64 object_haka_objects_Tex_0177F0[TEX_LEN(u64, object_haka_objects_Tex_0177F0_WIDTH, object_haka_objects_Tex_0177F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_017FF0_WIDTH 32
+#define object_haka_objects_Tex_017FF0_HEIGHT 32
+extern u64 object_haka_objects_Tex_017FF0[TEX_LEN(u64, object_haka_objects_Tex_017FF0_WIDTH, object_haka_objects_Tex_017FF0_HEIGHT, 16)];
+#define object_haka_objects_Tex_0187F0_WIDTH 16
+#define object_haka_objects_Tex_0187F0_HEIGHT 64
+extern u64 object_haka_objects_Tex_0187F0[TEX_LEN(u64, object_haka_objects_Tex_0187F0_WIDTH, object_haka_objects_Tex_0187F0_HEIGHT, 16)];
+#define object_haka_objects_Tex_018FF0_WIDTH 32
+#define object_haka_objects_Tex_018FF0_HEIGHT 32
+extern u64 object_haka_objects_Tex_018FF0[TEX_LEN(u64, object_haka_objects_Tex_018FF0_WIDTH, object_haka_objects_Tex_018FF0_HEIGHT, 16)];
+#define object_haka_objects_Tex_0197F0_WIDTH 16
+#define object_haka_objects_Tex_0197F0_HEIGHT 16
+extern u64 object_haka_objects_Tex_0197F0[TEX_LEN(u64, object_haka_objects_Tex_0197F0_WIDTH, object_haka_objects_Tex_0197F0_HEIGHT, 4)];
+#define object_haka_objects_Tex_019870_WIDTH 32
+#define object_haka_objects_Tex_019870_HEIGHT 32
+extern u64 object_haka_objects_Tex_019870[TEX_LEN(u64, object_haka_objects_Tex_019870_WIDTH, object_haka_objects_Tex_019870_HEIGHT, 16)];
+#define object_haka_objects_Tex_01A070_WIDTH 16
+#define object_haka_objects_Tex_01A070_HEIGHT 32
+extern u64 object_haka_objects_Tex_01A070[TEX_LEN(u64, object_haka_objects_Tex_01A070_WIDTH, object_haka_objects_Tex_01A070_HEIGHT, 16)];
+#define object_haka_objects_Tex_01A470_WIDTH 32
+#define object_haka_objects_Tex_01A470_HEIGHT 32
+extern u64 object_haka_objects_Tex_01A470[TEX_LEN(u64, object_haka_objects_Tex_01A470_WIDTH, object_haka_objects_Tex_01A470_HEIGHT, 4)];
+#define object_haka_objects_Tex_01A670_WIDTH 32
+#define object_haka_objects_Tex_01A670_HEIGHT 32
+extern u64 object_haka_objects_Tex_01A670[TEX_LEN(u64, object_haka_objects_Tex_01A670_WIDTH, object_haka_objects_Tex_01A670_HEIGHT, 16)];
+#define object_haka_objects_Tex_01AE70_WIDTH 64
+#define object_haka_objects_Tex_01AE70_HEIGHT 32
+extern u64 object_haka_objects_Tex_01AE70[TEX_LEN(u64, object_haka_objects_Tex_01AE70_WIDTH, object_haka_objects_Tex_01AE70_HEIGHT, 4)];
+#define object_haka_objects_Tex_01B270_WIDTH 64
+#define object_haka_objects_Tex_01B270_HEIGHT 16
+extern u64 object_haka_objects_Tex_01B270[TEX_LEN(u64, object_haka_objects_Tex_01B270_WIDTH, object_haka_objects_Tex_01B270_HEIGHT, 16)];
+#define object_haka_objects_Tex_01BA70_WIDTH 64
+#define object_haka_objects_Tex_01BA70_HEIGHT 16
+extern u64 object_haka_objects_Tex_01BA70[TEX_LEN(u64, object_haka_objects_Tex_01BA70_WIDTH, object_haka_objects_Tex_01BA70_HEIGHT, 16)];
+#define object_haka_objects_Tex_01C270_WIDTH 32
+#define object_haka_objects_Tex_01C270_HEIGHT 32
+extern u64 object_haka_objects_Tex_01C270[TEX_LEN(u64, object_haka_objects_Tex_01C270_WIDTH, object_haka_objects_Tex_01C270_HEIGHT, 4)];
+#define object_haka_objects_Tex_01C470_WIDTH 32
+#define object_haka_objects_Tex_01C470_HEIGHT 32
+extern u64 object_haka_objects_Tex_01C470[TEX_LEN(u64, object_haka_objects_Tex_01C470_WIDTH, object_haka_objects_Tex_01C470_HEIGHT, 4)];
+#define object_haka_objects_Tex_01C670_WIDTH 32
+#define object_haka_objects_Tex_01C670_HEIGHT 33
+extern u64 object_haka_objects_Tex_01C670[TEX_LEN(u64, object_haka_objects_Tex_01C670_WIDTH, object_haka_objects_Tex_01C670_HEIGHT, 16)];
+#define object_haka_objects_Tex_01CEB0_WIDTH 64
+#define object_haka_objects_Tex_01CEB0_HEIGHT 64
+extern u64 object_haka_objects_Tex_01CEB0[TEX_LEN(u64, object_haka_objects_Tex_01CEB0_WIDTH, object_haka_objects_Tex_01CEB0_HEIGHT, 4)];
+
+#endif

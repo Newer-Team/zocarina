@@ -1,0 +1,126 @@
+#ifndef OBJECT_SPOT02_OBJECTS_H
+#define OBJECT_SPOT02_OBJECTS_H
+
+#include "bgcheck.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+#define object_spot02_objects_Tex_000000_WIDTH 32
+#define object_spot02_objects_Tex_000000_HEIGHT 64
+extern u64 object_spot02_objects_Tex_000000[TEX_LEN(u64, object_spot02_objects_Tex_000000_WIDTH, object_spot02_objects_Tex_000000_HEIGHT, 8)];
+#define object_spot02_objects_Tex_000800_WIDTH 32
+#define object_spot02_objects_Tex_000800_HEIGHT 64
+extern u64 object_spot02_objects_Tex_000800[TEX_LEN(u64, object_spot02_objects_Tex_000800_WIDTH, object_spot02_objects_Tex_000800_HEIGHT, 8)];
+extern Vtx object_spot02_objects_Vtx_001000[];
+extern Gfx object_spot02_objects_DL_0013F0[61];
+#define gEffSunGraveSpark1Tex_WIDTH 64
+#define gEffSunGraveSpark1Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark1Tex[TEX_LEN(u64, gEffSunGraveSpark1Tex_WIDTH, gEffSunGraveSpark1Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark2Tex_WIDTH 64
+#define gEffSunGraveSpark2Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark2Tex[TEX_LEN(u64, gEffSunGraveSpark2Tex_WIDTH, gEffSunGraveSpark2Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark3Tex_WIDTH 64
+#define gEffSunGraveSpark3Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark3Tex[TEX_LEN(u64, gEffSunGraveSpark3Tex_WIDTH, gEffSunGraveSpark3Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark4Tex_WIDTH 64
+#define gEffSunGraveSpark4Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark4Tex[TEX_LEN(u64, gEffSunGraveSpark4Tex_WIDTH, gEffSunGraveSpark4Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark5Tex_WIDTH 64
+#define gEffSunGraveSpark5Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark5Tex[TEX_LEN(u64, gEffSunGraveSpark5Tex_WIDTH, gEffSunGraveSpark5Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark6Tex_WIDTH 64
+#define gEffSunGraveSpark6Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark6Tex[TEX_LEN(u64, gEffSunGraveSpark6Tex_WIDTH, gEffSunGraveSpark6Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark7Tex_WIDTH 64
+#define gEffSunGraveSpark7Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark7Tex[TEX_LEN(u64, gEffSunGraveSpark7Tex_WIDTH, gEffSunGraveSpark7Tex_HEIGHT, 8)];
+#define gEffSunGraveSpark8Tex_WIDTH 64
+#define gEffSunGraveSpark8Tex_HEIGHT 64
+extern u64 gEffSunGraveSpark8Tex[TEX_LEN(u64, gEffSunGraveSpark8Tex_WIDTH, gEffSunGraveSpark8Tex_HEIGHT, 8)];
+extern Vtx object_spot02_objects_Vtx_0095E0[];
+extern Gfx object_spot02_objects_DL_009620[17];
+#define object_spot02_objects_Tex_0096B0_WIDTH 32
+#define object_spot02_objects_Tex_0096B0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_0096B0[TEX_LEN(u64, object_spot02_objects_Tex_0096B0_WIDTH, object_spot02_objects_Tex_0096B0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00A2B0_WIDTH 32
+#define object_spot02_objects_Tex_00A2B0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00A2B0[TEX_LEN(u64, object_spot02_objects_Tex_00A2B0_WIDTH, object_spot02_objects_Tex_00A2B0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00AEB0_WIDTH 32
+#define object_spot02_objects_Tex_00AEB0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00AEB0[TEX_LEN(u64, object_spot02_objects_Tex_00AEB0_WIDTH, object_spot02_objects_Tex_00AEB0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00BAB0_WIDTH 32
+#define object_spot02_objects_Tex_00BAB0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00BAB0[TEX_LEN(u64, object_spot02_objects_Tex_00BAB0_WIDTH, object_spot02_objects_Tex_00BAB0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00C6B0_WIDTH 32
+#define object_spot02_objects_Tex_00C6B0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00C6B0[TEX_LEN(u64, object_spot02_objects_Tex_00C6B0_WIDTH, object_spot02_objects_Tex_00C6B0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00D2B0_WIDTH 32
+#define object_spot02_objects_Tex_00D2B0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00D2B0[TEX_LEN(u64, object_spot02_objects_Tex_00D2B0_WIDTH, object_spot02_objects_Tex_00D2B0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00DEB0_WIDTH 32
+#define object_spot02_objects_Tex_00DEB0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00DEB0[TEX_LEN(u64, object_spot02_objects_Tex_00DEB0_WIDTH, object_spot02_objects_Tex_00DEB0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00EAB0_WIDTH 32
+#define object_spot02_objects_Tex_00EAB0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00EAB0[TEX_LEN(u64, object_spot02_objects_Tex_00EAB0_WIDTH, object_spot02_objects_Tex_00EAB0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_00F6B0_WIDTH 32
+#define object_spot02_objects_Tex_00F6B0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_00F6B0[TEX_LEN(u64, object_spot02_objects_Tex_00F6B0_WIDTH, object_spot02_objects_Tex_00F6B0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_0102B0_WIDTH 32
+#define object_spot02_objects_Tex_0102B0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_0102B0[TEX_LEN(u64, object_spot02_objects_Tex_0102B0_WIDTH, object_spot02_objects_Tex_0102B0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_010EB0_WIDTH 32
+#define object_spot02_objects_Tex_010EB0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_010EB0[TEX_LEN(u64, object_spot02_objects_Tex_010EB0_WIDTH, object_spot02_objects_Tex_010EB0_HEIGHT, 8)];
+#define object_spot02_objects_Tex_011AB0_WIDTH 32
+#define object_spot02_objects_Tex_011AB0_HEIGHT 96
+extern u64 object_spot02_objects_Tex_011AB0[TEX_LEN(u64, object_spot02_objects_Tex_011AB0_WIDTH, object_spot02_objects_Tex_011AB0_HEIGHT, 8)];
+extern Vtx object_spot02_objects_Vtx_0126B0[];
+extern Gfx object_spot02_objects_DL_0126F0[17];
+extern Vtx object_spot02_objects_Vtx_012780[];
+extern Gfx object_spot02_objects_DL_0127C0[26];
+extern BgCamInfo object_spot02_objects_Col_0128D8_06012890_BgCamList[];
+extern SurfaceType object_spot02_objects_Col_0128D8_06012898_SurfaceTypes[];
+extern CollisionPoly object_spot02_objects_Col_0128D8_060128A0_PolyList[];
+extern Vec3s object_spot02_objects_Col_0128D8_060128C0_VtxList[];
+extern CollisionHeader object_spot02_objects_Col_0128D8;
+extern Vtx object_spot02_objects_Vtx_012910[];
+extern Gfx object_spot02_objects_DL_012A50[27];
+extern BgCamInfo object_spot02_objects_Col_012BA4_06012B30_BgCamList[];
+extern SurfaceType object_spot02_objects_Col_012BA4_06012B38_SurfaceTypes[];
+extern CollisionPoly object_spot02_objects_Col_012BA4_06012B40_PolyList[];
+extern Vec3s object_spot02_objects_Col_012BA4_06012B80_VtxList[];
+extern CollisionHeader object_spot02_objects_Col_012BA4;
+extern Vtx object_spot02_objects_Vtx_012BD0[];
+extern Gfx object_spot02_objects_DL_012D30[32];
+extern Vtx object_spot02_objects_Vtx_012E30[];
+extern Gfx object_spot02_objects_DL_0130B0[46];
+extern BgCamInfo object_spot02_objects_Col_0133EC_06013220_BgCamList[];
+extern SurfaceType object_spot02_objects_Col_0133EC_06013228_SurfaceTypes[];
+extern CollisionPoly object_spot02_objects_Col_0133EC_06013238_PolyList[];
+extern Vec3s object_spot02_objects_Col_0133EC_06013398_VtxList[];
+extern CollisionHeader object_spot02_objects_Col_0133EC;
+#define object_spot02_objects_Tex_013420_WIDTH 32
+#define object_spot02_objects_Tex_013420_HEIGHT 64
+extern u64 object_spot02_objects_Tex_013420[TEX_LEN(u64, object_spot02_objects_Tex_013420_WIDTH, object_spot02_objects_Tex_013420_HEIGHT, 4)];
+#define object_spot02_objects_Tex_013820_WIDTH 32
+#define object_spot02_objects_Tex_013820_HEIGHT 32
+extern u64 object_spot02_objects_Tex_013820[TEX_LEN(u64, object_spot02_objects_Tex_013820_WIDTH, object_spot02_objects_Tex_013820_HEIGHT, 16)];
+#define object_spot02_objects_Tex_014020_WIDTH 32
+#define object_spot02_objects_Tex_014020_HEIGHT 32
+extern u64 object_spot02_objects_Tex_014020[TEX_LEN(u64, object_spot02_objects_Tex_014020_WIDTH, object_spot02_objects_Tex_014020_HEIGHT, 16)];
+#define object_spot02_objects_Tex_014820_WIDTH 16
+#define object_spot02_objects_Tex_014820_HEIGHT 32
+extern u64 object_spot02_objects_Tex_014820[TEX_LEN(u64, object_spot02_objects_Tex_014820_WIDTH, object_spot02_objects_Tex_014820_HEIGHT, 16)];
+#define object_spot02_objects_Tex_014C20_WIDTH 64
+#define object_spot02_objects_Tex_014C20_HEIGHT 32
+extern u64 object_spot02_objects_Tex_014C20[TEX_LEN(u64, object_spot02_objects_Tex_014C20_WIDTH, object_spot02_objects_Tex_014C20_HEIGHT, 16)];
+#define object_spot02_objects_Tex_015C20_WIDTH 32
+#define object_spot02_objects_Tex_015C20_HEIGHT 32
+extern u64 object_spot02_objects_Tex_015C20[TEX_LEN(u64, object_spot02_objects_Tex_015C20_WIDTH, object_spot02_objects_Tex_015C20_HEIGHT, 16)];
+#define object_spot02_objects_Tex_016420_WIDTH 16
+#define object_spot02_objects_Tex_016420_HEIGHT 16
+extern u64 object_spot02_objects_Tex_016420[TEX_LEN(u64, object_spot02_objects_Tex_016420_WIDTH, object_spot02_objects_Tex_016420_HEIGHT, 16)];
+
+#endif

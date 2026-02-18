@@ -1,0 +1,29 @@
+#ifndef OBJECT_OPENING_DEMO1_H
+#define OBJECT_OPENING_DEMO1_H
+
+#include "animation.h"
+#include "ultra64.h"
+
+extern s16 object_opening_demo1_Anim_000450_06000000_FrameData[];
+extern JointIndex object_opening_demo1_Anim_000450_060003E4_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_000450;
+extern s16 object_opening_demo1_Anim_001410_06000460_FrameData[];
+extern JointIndex object_opening_demo1_Anim_001410_060013A4_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_001410;
+extern s16 object_opening_demo1_Anim_002574_06001420_FrameData[];
+extern JointIndex object_opening_demo1_Anim_002574_0600250C_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_002574;
+extern s16 object_opening_demo1_Anim_0029CC_06002590_FrameData[];
+extern JointIndex object_opening_demo1_Anim_0029CC_06002964_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_0029CC;
+extern s16 object_opening_demo1_Anim_00420C_060029E0_FrameData[];
+extern JointIndex object_opening_demo1_Anim_00420C_060041A0_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_00420C;
+extern s16 object_opening_demo1_Anim_0048FC_06004220_FrameData[];
+extern JointIndex object_opening_demo1_Anim_0048FC_06004890_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_0048FC;
+extern s16 object_opening_demo1_Anim_00504C_06004910_FrameData[];
+extern JointIndex object_opening_demo1_Anim_00504C_06004FE0_JointIndices[];
+extern AnimationHeader object_opening_demo1_Anim_00504C;
+
+#endif

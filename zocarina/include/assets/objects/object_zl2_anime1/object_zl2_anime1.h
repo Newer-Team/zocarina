@@ -1,0 +1,86 @@
+#ifndef OBJECT_ZL2_ANIME1_H
+#define OBJECT_ZL2_ANIME1_H
+
+#include "animation.h"
+#include "ultra64.h"
+
+extern s16 gZelda2Anime1Anim_0003BC_06000000_FrameData[];
+extern JointIndex gZelda2Anime1Anim_0003BC_06000360_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_0003BC;
+extern s16 gZelda2Anime1Anim_000A50_060003D0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_000A50_060009F4_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_000A50;
+extern s16 gZelda2Anime1Anim_000EB0_06000A60_FrameData[];
+extern JointIndex gZelda2Anime1Anim_000EB0_06000E54_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_000EB0;
+extern s16 gZelda2Anime1Anim_001010_06000EC0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_001010_06000FB4_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_001010;
+extern s16 gZelda2Anime1Anim_0013A0_06001020_FrameData[];
+extern JointIndex gZelda2Anime1Anim_0013A0_06001344_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_0013A0;
+extern s16 gZelda2Anime1Anim_001670_060013B0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_001670_06001614_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_001670;
+extern s16 gZelda2Anime1Anim_001B48_06001680_FrameData[];
+extern JointIndex gZelda2Anime1Anim_001B48_06001AEC_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_001B48;
+extern s16 gZelda2Anime1Anim_0022D0_06001B60_FrameData[];
+extern JointIndex gZelda2Anime1Anim_0022D0_06002274_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_0022D0;
+extern s16 gZelda2Anime1Anim_002750_060022E0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_002750_060026F4_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_002750;
+extern s16 gZelda2Anime1Anim_002B14_06002760_FrameData[];
+extern JointIndex gZelda2Anime1Anim_002B14_06002AB8_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_002B14;
+extern s16 gZelda2Anime1Anim_002F30_06002B30_FrameData[];
+extern JointIndex gZelda2Anime1Anim_002F30_06002ED4_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_002F30;
+extern s16 gZelda2Anime1Anim_00325C_06002F40_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00325C_06003200_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00325C;
+extern s16 gZelda2Anime1Anim_003538_06003270_FrameData[];
+extern JointIndex gZelda2Anime1Anim_003538_060034DC_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_003538;
+extern s16 gZelda2Anime1Anim_004900_06003550_FrameData[];
+extern JointIndex gZelda2Anime1Anim_004900_060048A4_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_004900;
+extern s16 gZelda2Anime1Anim_005F40_06004910_FrameData[];
+extern JointIndex gZelda2Anime1Anim_005F40_06005EE4_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_005F40;
+extern s16 gZelda2Anime1Anim_006778_06005F50_FrameData[];
+extern JointIndex gZelda2Anime1Anim_006778_0600671C_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_006778;
+extern s16 gZelda2Anime1Anim_007D0C_06006790_FrameData[];
+extern JointIndex gZelda2Anime1Anim_007D0C_06007CB0_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_007D0C;
+extern s16 gZelda2Anime1Anim_0087B8_06007D20_FrameData[];
+extern JointIndex gZelda2Anime1Anim_0087B8_0600875C_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_0087B8;
+extern s16 gZelda2Anime1Anim_0090D8_060087D0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_0090D8_0600907C_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_0090D8;
+extern s16 gZelda2Anime1Anim_009AD4_060090F0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_009AD4_06009A78_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_009AD4;
+extern s16 gZelda2Anime1Anim_00A15C_06009AF0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00A15C_0600A100_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00A15C;
+extern s16 gZelda2Anime1Anim_00A79C_0600A170_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00A79C_0600A740_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00A79C;
+extern s16 gZelda2Anime1Anim_00AAD4_0600A7B0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00AAD4_0600AA78_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00AAD4;
+extern s16 gZelda2Anime1Anim_00AFE0_0600AAF0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00AFE0_0600AF84_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00AFE0;
+extern s16 gZelda2Anime1Anim_00B224_0600AFF0_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00B224_0600B1C8_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00B224;
+extern s16 gZelda2Anime1Anim_00B5FC_0600B240_FrameData[];
+extern JointIndex gZelda2Anime1Anim_00B5FC_0600B5A0_JointIndices[];
+extern AnimationHeader gZelda2Anime1Anim_00B5FC;
+
+#endif

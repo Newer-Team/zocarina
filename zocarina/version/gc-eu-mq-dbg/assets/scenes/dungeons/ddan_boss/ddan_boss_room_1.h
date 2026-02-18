@@ -1,0 +1,33 @@
+#ifndef DDAN_BOSS_ROOM_1_H
+#define DDAN_BOSS_ROOM_1_H
+
+#include "room.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+
+extern SceneCmd ddan_boss_room_1[];
+#define LENGTH_ddan_boss_room_1_03000040_ObjectList 6
+extern s16 ddan_boss_room_1_03000040_ObjectList[LENGTH_ddan_boss_room_1_03000040_ObjectList];
+#define LENGTH_ddan_boss_room_1_0300004C_ActorEntryList 8
+extern ActorEntry ddan_boss_room_1_0300004C_ActorEntryList[LENGTH_ddan_boss_room_1_0300004C_ActorEntryList];
+extern RoomShapeCullable ddan_boss_room_1_030000D0_RoomShapeCullable;
+#define LENGTH_ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries 2
+extern RoomShapeCullableEntry ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries[LENGTH_ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries];
+extern u8 ddan_boss_room_1_unaccounted_0000FC[];
+extern Vtx ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries_03000A50_DL_03000100_Vtx_fused_[];
+extern Gfx ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries_03000A50_DL[129];
+extern Vtx ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries_03001A38_DL_03000E58_Vtx_fused_[];
+extern Gfx ddan_boss_room_1_030000D0_RoomShapeCullable_030000DC_CullableEntries_03001A38_DL[241];
+extern u8 ddan_boss_room_1_unaccounted_0021C0[];
+#define gDodongosCavernBossLavaFloorTex_WIDTH 32
+#define gDodongosCavernBossLavaFloorTex_HEIGHT 64
+extern u64 gDodongosCavernBossLavaFloorTex[TEX_LEN(u64, gDodongosCavernBossLavaFloorTex_WIDTH, gDodongosCavernBossLavaFloorTex_HEIGHT, 16)];
+#define ddan_boss_room_1_000031D8_CITex_WIDTH 32
+#define ddan_boss_room_1_000031D8_CITex_HEIGHT 64
+extern u64 ddan_boss_room_1_000031D8_CITex[TEX_LEN(u64, ddan_boss_room_1_000031D8_CITex_WIDTH, ddan_boss_room_1_000031D8_CITex_HEIGHT, 8)];
+#define ddan_boss_room_1_000039D8_CITex_WIDTH 32
+#define ddan_boss_room_1_000039D8_CITex_HEIGHT 32
+extern u64 ddan_boss_room_1_000039D8_CITex[TEX_LEN(u64, ddan_boss_room_1_000039D8_CITex_WIDTH, ddan_boss_room_1_000039D8_CITex_HEIGHT, 8)];
+
+#endif

@@ -1,0 +1,161 @@
+#ifndef SPOT11_SCENE_H
+#define SPOT11_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "path.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd spot11_scene[];
+extern SceneCmd* spot11_scene_02000060_AltHeaders[];
+#define LENGTH_spot11_scene_02000074_PlayerEntryList 8
+extern ActorEntry spot11_scene_02000074_PlayerEntryList[LENGTH_spot11_scene_02000074_PlayerEntryList];
+#define LENGTH_spot11_scene_020000F4_RoomList 1
+extern RomFile spot11_scene_020000F4_RoomList[LENGTH_spot11_scene_020000F4_RoomList];
+extern Spawn spot11_scene_020000FC_SpawnList[];
+extern s16 spot11_scene_0200010C_ExitList[];
+#define LENGTH_spot11_scene_02000118_EnvLightSettingsList 12
+extern EnvLightSettings spot11_scene_02000118_EnvLightSettingsList[LENGTH_spot11_scene_02000118_EnvLightSettingsList];
+extern Vec3s spot11_scene_02004EE4_BgCamList_02000220_BgCamFuncData[];
+extern BgCamInfo spot11_scene_02004EE4_BgCamList[];
+extern u8 spot11_scene_unaccounted_00025C[];
+extern SurfaceType spot11_scene_02004EE4_SurfaceTypes[];
+extern CollisionPoly spot11_scene_02004EE4_PolyList[];
+extern Vec3s spot11_scene_02004EE4_VtxList[];
+extern WaterBox spot11_scene_02004EE4_WaterBoxes[];
+extern CollisionHeader spot11_scene_02004EE4_Col;
+extern CutsceneData gDesertColossusRequiemOfSpiritCs[];
+extern CutsceneData gDesertColossusNabooruCapturedCs[];
+extern SceneCmd spot11_scene_02000060_AltHeaders_02007530_Cmds[];
+#define LENGTH_spot11_scene_02000060_AltHeaders_02007530_Cmds_02007590_PlayerEntryList 9
+extern ActorEntry spot11_scene_02000060_AltHeaders_02007530_Cmds_02007590_PlayerEntryList[LENGTH_spot11_scene_02000060_AltHeaders_02007530_Cmds_02007590_PlayerEntryList];
+#define LENGTH_spot11_scene_02000060_AltHeaders_02007530_Cmds_02007620_RoomList 1
+extern RomFile spot11_scene_02000060_AltHeaders_02007530_Cmds_02007620_RoomList[LENGTH_spot11_scene_02000060_AltHeaders_02007530_Cmds_02007620_RoomList];
+extern Spawn spot11_scene_02000060_AltHeaders_02007530_Cmds_02007628_SpawnList[];
+extern s16 spot11_scene_02000060_AltHeaders_02007530_Cmds_0200763C_ExitList[];
+#define LENGTH_spot11_scene_02000060_AltHeaders_02007530_Cmds_02007648_EnvLightSettingsList 12
+extern EnvLightSettings spot11_scene_02000060_AltHeaders_02007530_Cmds_02007648_EnvLightSettingsList[LENGTH_spot11_scene_02000060_AltHeaders_02007530_Cmds_02007648_EnvLightSettingsList];
+extern Vec3s spot11_scene_02000060_AltHeaders_02007530_Cmds_020077C8_PathList_02007750_Points[];
+extern Path spot11_scene_02000060_AltHeaders_02007530_Cmds_020077C8_PathList[];
+extern SceneCmd spot11_scene_02000060_AltHeaders_020077D0_Cmds[];
+#define LENGTH_spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007830_PlayerEntryList 1
+extern ActorEntry spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007830_PlayerEntryList[LENGTH_spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007830_PlayerEntryList];
+#define LENGTH_spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007840_RoomList 1
+extern RomFile spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007840_RoomList[LENGTH_spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007840_RoomList];
+extern Spawn spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007848_SpawnList[];
+extern s16 spot11_scene_02000060_AltHeaders_020077D0_Cmds_0200784C_ExitList[];
+#define LENGTH_spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007850_EnvLightSettingsList 4
+extern EnvLightSettings spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007850_EnvLightSettingsList[LENGTH_spot11_scene_02000060_AltHeaders_020077D0_Cmds_02007850_EnvLightSettingsList];
+extern SceneCmd spot11_scene_02000060_AltHeaders_020078B0_Cmds[];
+#define LENGTH_spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007910_PlayerEntryList 1
+extern ActorEntry spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007910_PlayerEntryList[LENGTH_spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007910_PlayerEntryList];
+#define LENGTH_spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007920_RoomList 1
+extern RomFile spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007920_RoomList[LENGTH_spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007920_RoomList];
+extern Spawn spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007928_SpawnList[];
+extern s16 spot11_scene_02000060_AltHeaders_020078B0_Cmds_0200792C_ExitList[];
+#define LENGTH_spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007930_EnvLightSettingsList 4
+extern EnvLightSettings spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007930_EnvLightSettingsList[LENGTH_spot11_scene_02000060_AltHeaders_020078B0_Cmds_02007930_EnvLightSettingsList];
+extern CutsceneData gDesertColossusIntroCs[];
+#define spot11_scene_00007CA0_Tex_WIDTH 32
+#define spot11_scene_00007CA0_Tex_HEIGHT 32
+extern u64 spot11_scene_00007CA0_Tex[TEX_LEN(u64, spot11_scene_00007CA0_Tex_WIDTH, spot11_scene_00007CA0_Tex_HEIGHT, 16)];
+#define spot11_scene_000084A0_Tex_WIDTH 32
+#define spot11_scene_000084A0_Tex_HEIGHT 32
+extern u64 spot11_scene_000084A0_Tex[TEX_LEN(u64, spot11_scene_000084A0_Tex_WIDTH, spot11_scene_000084A0_Tex_HEIGHT, 16)];
+#define spot11_scene_00008CA0_Tex_WIDTH 16
+#define spot11_scene_00008CA0_Tex_HEIGHT 32
+extern u64 spot11_scene_00008CA0_Tex[TEX_LEN(u64, spot11_scene_00008CA0_Tex_WIDTH, spot11_scene_00008CA0_Tex_HEIGHT, 16)];
+#define spot11_scene_000090A0_Tex_WIDTH 128
+#define spot11_scene_000090A0_Tex_HEIGHT 16
+extern u64 spot11_scene_000090A0_Tex[TEX_LEN(u64, spot11_scene_000090A0_Tex_WIDTH, spot11_scene_000090A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000A0A0_Tex_WIDTH 32
+#define spot11_scene_0000A0A0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000A0A0_Tex[TEX_LEN(u64, spot11_scene_0000A0A0_Tex_WIDTH, spot11_scene_0000A0A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000A8A0_Tex_WIDTH 64
+#define spot11_scene_0000A8A0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000A8A0_Tex[TEX_LEN(u64, spot11_scene_0000A8A0_Tex_WIDTH, spot11_scene_0000A8A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000B8A0_Tex_WIDTH 16
+#define spot11_scene_0000B8A0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000B8A0_Tex[TEX_LEN(u64, spot11_scene_0000B8A0_Tex_WIDTH, spot11_scene_0000B8A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000BCA0_Tex_WIDTH 32
+#define spot11_scene_0000BCA0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000BCA0_Tex[TEX_LEN(u64, spot11_scene_0000BCA0_Tex_WIDTH, spot11_scene_0000BCA0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000C4A0_Tex_WIDTH 32
+#define spot11_scene_0000C4A0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000C4A0_Tex[TEX_LEN(u64, spot11_scene_0000C4A0_Tex_WIDTH, spot11_scene_0000C4A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000CCA0_Tex_WIDTH 16
+#define spot11_scene_0000CCA0_Tex_HEIGHT 64
+extern u64 spot11_scene_0000CCA0_Tex[TEX_LEN(u64, spot11_scene_0000CCA0_Tex_WIDTH, spot11_scene_0000CCA0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000D4A0_Tex_WIDTH 32
+#define spot11_scene_0000D4A0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000D4A0_Tex[TEX_LEN(u64, spot11_scene_0000D4A0_Tex_WIDTH, spot11_scene_0000D4A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000DCA0_Tex_WIDTH 64
+#define spot11_scene_0000DCA0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000DCA0_Tex[TEX_LEN(u64, spot11_scene_0000DCA0_Tex_WIDTH, spot11_scene_0000DCA0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000ECA0_Tex_WIDTH 32
+#define spot11_scene_0000ECA0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000ECA0_Tex[TEX_LEN(u64, spot11_scene_0000ECA0_Tex_WIDTH, spot11_scene_0000ECA0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000F4A0_Tex_WIDTH 32
+#define spot11_scene_0000F4A0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000F4A0_Tex[TEX_LEN(u64, spot11_scene_0000F4A0_Tex_WIDTH, spot11_scene_0000F4A0_Tex_HEIGHT, 16)];
+#define spot11_scene_0000FCA0_Tex_WIDTH 8
+#define spot11_scene_0000FCA0_Tex_HEIGHT 8
+extern u64 spot11_scene_0000FCA0_Tex[TEX_LEN(u64, spot11_scene_0000FCA0_Tex_WIDTH, spot11_scene_0000FCA0_Tex_HEIGHT, 8)];
+#define spot11_scene_0000FCE0_Tex_WIDTH 32
+#define spot11_scene_0000FCE0_Tex_HEIGHT 32
+extern u64 spot11_scene_0000FCE0_Tex[TEX_LEN(u64, spot11_scene_0000FCE0_Tex_WIDTH, spot11_scene_0000FCE0_Tex_HEIGHT, 16)];
+#define spot11_scene_000104E0_Tex_WIDTH 32
+#define spot11_scene_000104E0_Tex_HEIGHT 32
+extern u64 spot11_scene_000104E0_Tex[TEX_LEN(u64, spot11_scene_000104E0_Tex_WIDTH, spot11_scene_000104E0_Tex_HEIGHT, 16)];
+#define spot11_scene_00010CE0_Tex_WIDTH 32
+#define spot11_scene_00010CE0_Tex_HEIGHT 64
+extern u64 spot11_scene_00010CE0_Tex[TEX_LEN(u64, spot11_scene_00010CE0_Tex_WIDTH, spot11_scene_00010CE0_Tex_HEIGHT, 16)];
+#define spot11_scene_00011CE0_Tex_WIDTH 32
+#define spot11_scene_00011CE0_Tex_HEIGHT 32
+extern u64 spot11_scene_00011CE0_Tex[TEX_LEN(u64, spot11_scene_00011CE0_Tex_WIDTH, spot11_scene_00011CE0_Tex_HEIGHT, 16)];
+#define spot11_scene_000124E0_Tex_WIDTH 32
+#define spot11_scene_000124E0_Tex_HEIGHT 32
+extern u64 spot11_scene_000124E0_Tex[TEX_LEN(u64, spot11_scene_000124E0_Tex_WIDTH, spot11_scene_000124E0_Tex_HEIGHT, 16)];
+#define spot11_scene_00012CE0_Tex_WIDTH 32
+#define spot11_scene_00012CE0_Tex_HEIGHT 32
+extern u64 spot11_scene_00012CE0_Tex[TEX_LEN(u64, spot11_scene_00012CE0_Tex_WIDTH, spot11_scene_00012CE0_Tex_HEIGHT, 16)];
+#define spot11_scene_000134E0_Tex_WIDTH 32
+#define spot11_scene_000134E0_Tex_HEIGHT 32
+extern u64 spot11_scene_000134E0_Tex[TEX_LEN(u64, spot11_scene_000134E0_Tex_WIDTH, spot11_scene_000134E0_Tex_HEIGHT, 16)];
+#define spot11_scene_00013CE0_Tex_WIDTH 32
+#define spot11_scene_00013CE0_Tex_HEIGHT 32
+extern u64 spot11_scene_00013CE0_Tex[TEX_LEN(u64, spot11_scene_00013CE0_Tex_WIDTH, spot11_scene_00013CE0_Tex_HEIGHT, 16)];
+#define spot11_scene_000144E0_Tex_WIDTH 32
+#define spot11_scene_000144E0_Tex_HEIGHT 64
+extern u64 spot11_scene_000144E0_Tex[TEX_LEN(u64, spot11_scene_000144E0_Tex_WIDTH, spot11_scene_000144E0_Tex_HEIGHT, 16)];
+#define spot11_scene_000154E0_Tex_WIDTH 32
+#define spot11_scene_000154E0_Tex_HEIGHT 32
+extern u64 spot11_scene_000154E0_Tex[TEX_LEN(u64, spot11_scene_000154E0_Tex_WIDTH, spot11_scene_000154E0_Tex_HEIGHT, 16)];
+#define spot11_scene_00015CE0_Tex_WIDTH 32
+#define spot11_scene_00015CE0_Tex_HEIGHT 32
+extern u64 spot11_scene_00015CE0_Tex[TEX_LEN(u64, spot11_scene_00015CE0_Tex_WIDTH, spot11_scene_00015CE0_Tex_HEIGHT, 16)];
+#define spot11_scene_000164E0_Tex_WIDTH 32
+#define spot11_scene_000164E0_Tex_HEIGHT 128
+extern u64 spot11_scene_000164E0_Tex[TEX_LEN(u64, spot11_scene_000164E0_Tex_WIDTH, spot11_scene_000164E0_Tex_HEIGHT, 4)];
+#define spot11_scene_00016CE0_Tex_WIDTH 32
+#define spot11_scene_00016CE0_Tex_HEIGHT 32
+extern u64 spot11_scene_00016CE0_Tex[TEX_LEN(u64, spot11_scene_00016CE0_Tex_WIDTH, spot11_scene_00016CE0_Tex_HEIGHT, 16)];
+#define spot11_scene_000174E0_Tex_WIDTH 16
+#define spot11_scene_000174E0_Tex_HEIGHT 64
+extern u64 spot11_scene_000174E0_Tex[TEX_LEN(u64, spot11_scene_000174E0_Tex_WIDTH, spot11_scene_000174E0_Tex_HEIGHT, 16)];
+#define spot11_scene_00017CE0_Tex_WIDTH 64
+#define spot11_scene_00017CE0_Tex_HEIGHT 64
+extern u64 spot11_scene_00017CE0_Tex[TEX_LEN(u64, spot11_scene_00017CE0_Tex_WIDTH, spot11_scene_00017CE0_Tex_HEIGHT, 4)];
+#define spot11_scene_000184E0_Tex_WIDTH 32
+#define spot11_scene_000184E0_Tex_HEIGHT 32
+extern u64 spot11_scene_000184E0_Tex[TEX_LEN(u64, spot11_scene_000184E0_Tex_WIDTH, spot11_scene_000184E0_Tex_HEIGHT, 16)];
+#define spot11_scene_00018CE0_Tex_WIDTH 32
+#define spot11_scene_00018CE0_Tex_HEIGHT 32
+extern u64 spot11_scene_00018CE0_Tex[TEX_LEN(u64, spot11_scene_00018CE0_Tex_WIDTH, spot11_scene_00018CE0_Tex_HEIGHT, 16)];
+
+#endif

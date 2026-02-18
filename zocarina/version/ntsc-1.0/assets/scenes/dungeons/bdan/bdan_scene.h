@@ -1,0 +1,63 @@
+#ifndef BDAN_SCENE_H
+#define BDAN_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd bdan_scene[];
+extern SceneCmd* bdan_scene_02000068_AltHeaders[];
+#define LENGTH_bdan_scene_02000078_PlayerEntryList 2
+extern ActorEntry bdan_scene_02000078_PlayerEntryList[LENGTH_bdan_scene_02000078_PlayerEntryList];
+#define LENGTH_bdan_scene_02000098_TransitionActorEntryList 22
+extern TransitionActorEntry bdan_scene_02000098_TransitionActorEntryList[LENGTH_bdan_scene_02000098_TransitionActorEntryList];
+#define LENGTH_bdan_scene_020001F8_RoomList 16
+extern RomFile bdan_scene_020001F8_RoomList[LENGTH_bdan_scene_020001F8_RoomList];
+extern Spawn bdan_scene_02000278_SpawnList[];
+extern s16 bdan_scene_0200027C_ExitList[];
+#define LENGTH_bdan_scene_02000280_EnvLightSettingsList 4
+extern EnvLightSettings bdan_scene_02000280_EnvLightSettingsList[LENGTH_bdan_scene_02000280_EnvLightSettingsList];
+extern BgCamInfo bdan_scene_02013054_BgCamList[];
+extern SurfaceType bdan_scene_02013054_SurfaceTypes[];
+extern CollisionPoly bdan_scene_02013054_PolyList[];
+extern Vec3s bdan_scene_02013054_VtxList[];
+extern WaterBox bdan_scene_02013054_WaterBoxes[];
+extern CollisionHeader bdan_scene_02013054_Col;
+extern CutsceneData gJabuRutoObtainingSapphireUnusedCs[];
+extern SceneCmd bdan_scene_02000068_AltHeaders_02013700_Cmds[];
+#define LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_02013768_PlayerEntryList 2
+extern ActorEntry bdan_scene_02000068_AltHeaders_02013700_Cmds_02013768_PlayerEntryList[LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_02013768_PlayerEntryList];
+#define LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_02013788_TransitionActorEntryList 22
+extern TransitionActorEntry bdan_scene_02000068_AltHeaders_02013700_Cmds_02013788_TransitionActorEntryList[LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_02013788_TransitionActorEntryList];
+#define LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_020138E8_RoomList 16
+extern RomFile bdan_scene_02000068_AltHeaders_02013700_Cmds_020138E8_RoomList[LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_020138E8_RoomList];
+extern Spawn bdan_scene_02000068_AltHeaders_02013700_Cmds_02013968_SpawnList[];
+extern s16 bdan_scene_02000068_AltHeaders_02013700_Cmds_0201396C_ExitList[];
+#define LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_02013970_EnvLightSettingsList 4
+extern EnvLightSettings bdan_scene_02000068_AltHeaders_02013700_Cmds_02013970_EnvLightSettingsList[LENGTH_bdan_scene_02000068_AltHeaders_02013700_Cmds_02013970_EnvLightSettingsList];
+//#define bdan_scene_000139D0_TLUT_TLUT_COUNT 256
+extern u64 bdan_scene_000139D0_TLUT[];
+extern u8 bdan_scene_unaccounted_013BD0[];
+//#define bdan_scene_00013BD8_TLUT_TLUT_COUNT 256
+extern u64 bdan_scene_00013BD8_TLUT[];
+extern u8 bdan_scene_unaccounted_013DD8[];
+#define bdan_scene_00013DE0_CITex_WIDTH 32
+#define bdan_scene_00013DE0_CITex_HEIGHT 64
+extern u64 bdan_scene_00013DE0_CITex[TEX_LEN(u64, bdan_scene_00013DE0_CITex_WIDTH, bdan_scene_00013DE0_CITex_HEIGHT, 8)];
+#define bdan_scene_000145E0_CITex_WIDTH 32
+#define bdan_scene_000145E0_CITex_HEIGHT 32
+extern u64 bdan_scene_000145E0_CITex[TEX_LEN(u64, bdan_scene_000145E0_CITex_WIDTH, bdan_scene_000145E0_CITex_HEIGHT, 8)];
+#define bdan_scene_000149E0_CITex_WIDTH 32
+#define bdan_scene_000149E0_CITex_HEIGHT 64
+extern u64 bdan_scene_000149E0_CITex[TEX_LEN(u64, bdan_scene_000149E0_CITex_WIDTH, bdan_scene_000149E0_CITex_HEIGHT, 8)];
+#define bdan_scene_000151E0_CITex_WIDTH 32
+#define bdan_scene_000151E0_CITex_HEIGHT 32
+extern u64 bdan_scene_000151E0_CITex[TEX_LEN(u64, bdan_scene_000151E0_CITex_WIDTH, bdan_scene_000151E0_CITex_HEIGHT, 8)];
+extern CutsceneData gJabuIntroCs[];
+
+#endif

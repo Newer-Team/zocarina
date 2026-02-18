@@ -1,0 +1,52 @@
+#ifndef GANON_TOU_SCENE_H
+#define GANON_TOU_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd ganon_tou_scene[];
+extern SceneCmd* ganon_tou_scene_02000060_AltHeaders[];
+#define LENGTH_ganon_tou_scene_02000070_PlayerEntryList 3
+extern ActorEntry ganon_tou_scene_02000070_PlayerEntryList[LENGTH_ganon_tou_scene_02000070_PlayerEntryList];
+#define LENGTH_ganon_tou_scene_020000A0_RoomList 1
+extern RomFile ganon_tou_scene_020000A0_RoomList[LENGTH_ganon_tou_scene_020000A0_RoomList];
+extern Spawn ganon_tou_scene_020000A8_SpawnList[];
+extern s16 ganon_tou_scene_020000B0_ExitList[];
+#define LENGTH_ganon_tou_scene_020000B8_EnvLightSettingsList 5
+extern EnvLightSettings ganon_tou_scene_020000B8_EnvLightSettingsList[LENGTH_ganon_tou_scene_020000B8_EnvLightSettingsList];
+extern BgCamInfo ganon_tou_scene_02002610_BgCamList[];
+extern SurfaceType ganon_tou_scene_02002610_SurfaceTypes[];
+extern CollisionPoly ganon_tou_scene_02002610_PolyList[];
+extern Vec3s ganon_tou_scene_02002610_VtxList[];
+extern CollisionHeader ganon_tou_scene_02002610_Col;
+extern CutsceneData gRainbowBridgeCs[];
+extern SceneCmd ganon_tou_scene_unused[];
+#define LENGTH_ganon_tou_scene_unused_020030D8_PlayerEntryList 3
+extern ActorEntry ganon_tou_scene_unused_020030D8_PlayerEntryList[LENGTH_ganon_tou_scene_unused_020030D8_PlayerEntryList];
+#define LENGTH_ganon_tou_scene_unused_02003108_RoomList 1
+extern RomFile ganon_tou_scene_unused_02003108_RoomList[LENGTH_ganon_tou_scene_unused_02003108_RoomList];
+extern Spawn ganon_tou_scene_unused_02003110_SpawnList[];
+extern s16 ganon_tou_scene_unused_02003118_ExitList[];
+#define LENGTH_ganon_tou_scene_unused_02003120_EnvLightSettingsList 4
+extern EnvLightSettings ganon_tou_scene_unused_02003120_EnvLightSettingsList[LENGTH_ganon_tou_scene_unused_02003120_EnvLightSettingsList];
+extern SceneCmd ganon_tou_scene_02000060_AltHeaders_02003180_Cmds[];
+#define LENGTH_ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_020031E0_PlayerEntryList 3
+extern ActorEntry ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_020031E0_PlayerEntryList[LENGTH_ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_020031E0_PlayerEntryList];
+#define LENGTH_ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003210_RoomList 1
+extern RomFile ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003210_RoomList[LENGTH_ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003210_RoomList];
+extern Spawn ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003218_SpawnList[];
+extern s16 ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003220_ExitList[];
+#define LENGTH_ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003228_EnvLightSettingsList 4
+extern EnvLightSettings ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003228_EnvLightSettingsList[LENGTH_ganon_tou_scene_02000060_AltHeaders_02003180_Cmds_02003228_EnvLightSettingsList];
+#define ganon_tou_scene_00003280_Tex_WIDTH 64
+#define ganon_tou_scene_00003280_Tex_HEIGHT 64
+extern u64 ganon_tou_scene_00003280_Tex[TEX_LEN(u64, ganon_tou_scene_00003280_Tex_WIDTH, ganon_tou_scene_00003280_Tex_HEIGHT, 8)];
+extern CutsceneData gGanonsCastleIntroCs[];
+
+#endif

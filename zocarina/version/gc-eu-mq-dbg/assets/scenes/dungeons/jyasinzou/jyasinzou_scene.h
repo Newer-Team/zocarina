@@ -1,0 +1,89 @@
+#ifndef JYASINZOU_SCENE_H
+#define JYASINZOU_SCENE_H
+
+#include "bgcheck.h"
+#include "cutscene.h"
+#include "environment.h"
+#include "path.h"
+#include "romfile.h"
+#include "scene.h"
+#include "tex_len.h"
+#include "ultra64.h"
+#include "z_math.h"
+
+extern SceneCmd jyasinzou_scene[];
+#define LENGTH_jyasinzou_scene_02000068_PlayerEntryList 4
+extern ActorEntry jyasinzou_scene_02000068_PlayerEntryList[LENGTH_jyasinzou_scene_02000068_PlayerEntryList];
+#define LENGTH_jyasinzou_scene_020000A8_TransitionActorEntryList 33
+extern TransitionActorEntry jyasinzou_scene_020000A8_TransitionActorEntryList[LENGTH_jyasinzou_scene_020000A8_TransitionActorEntryList];
+#define LENGTH_jyasinzou_scene_020002B8_RoomList 29
+extern RomFile jyasinzou_scene_020002B8_RoomList[LENGTH_jyasinzou_scene_020002B8_RoomList];
+extern Spawn jyasinzou_scene_020003A0_SpawnList[];
+extern s16 jyasinzou_scene_020003A8_ExitList[];
+#define LENGTH_jyasinzou_scene_020003B0_EnvLightSettingsList 4
+extern EnvLightSettings jyasinzou_scene_020003B0_EnvLightSettingsList[LENGTH_jyasinzou_scene_020003B0_EnvLightSettingsList];
+extern Vec3s jyasinzou_scenePathList_00049C_02000408_Points[];
+extern Vec3s jyasinzou_scenePathList_00049C_02000414_Points[];
+extern Vec3s jyasinzou_scenePathList_00049C_02000420_Points[];
+extern Vec3s jyasinzou_scenePathList_00049C_0200042C_Points[];
+extern Vec3s jyasinzou_scenePathList_00049C_02000464_Points[];
+extern Path jyasinzou_scenePathList_00049C[];
+extern Vec3s jyasinzou_scene_0201680C_BgCamList_020004D0_BgCamFuncData[];
+extern BgCamInfo jyasinzou_scene_0201680C_BgCamList[];
+extern SurfaceType jyasinzou_scene_0201680C_SurfaceTypes[];
+extern CollisionPoly jyasinzou_scene_0201680C_PolyList[];
+extern Vec3s jyasinzou_scene_0201680C_VtxList[];
+extern CollisionHeader jyasinzou_scene_0201680C_Col;
+extern CutsceneData gSpiritTempleUnused1Cs[];
+extern CutsceneData gSpiritTempleUnused2Cs[];
+extern SceneCmd jyasinzou_scene_unused1[];
+#define LENGTH_jyasinzou_scene_unused1_02017270_PlayerEntryList 2
+extern ActorEntry jyasinzou_scene_unused1_02017270_PlayerEntryList[LENGTH_jyasinzou_scene_unused1_02017270_PlayerEntryList];
+#define LENGTH_jyasinzou_scene_unused1_02017290_ActorEntryList 15
+extern ActorEntry jyasinzou_scene_unused1_02017290_ActorEntryList[LENGTH_jyasinzou_scene_unused1_02017290_ActorEntryList];
+#define LENGTH_jyasinzou_scene_unused1_02017380_TransitionActorEntryList 34
+extern TransitionActorEntry jyasinzou_scene_unused1_02017380_TransitionActorEntryList[LENGTH_jyasinzou_scene_unused1_02017380_TransitionActorEntryList];
+#define LENGTH_jyasinzou_scene_unused1_020175A0_RoomList 29
+extern RomFile jyasinzou_scene_unused1_020175A0_RoomList[LENGTH_jyasinzou_scene_unused1_020175A0_RoomList];
+extern Spawn jyasinzou_scene_unused1_02017688_SpawnList[];
+extern s16 jyasinzou_scene_unused1_0201768C_ExitList[];
+#define LENGTH_jyasinzou_scene_unused1_02017694_EnvLightSettingsList 4
+extern EnvLightSettings jyasinzou_scene_unused1_02017694_EnvLightSettingsList[LENGTH_jyasinzou_scene_unused1_02017694_EnvLightSettingsList];
+extern SceneCmd jyasinzou_scene_unused2[];
+#define LENGTH_jyasinzou_scene_unused2_02017760_PlayerEntryList 2
+extern ActorEntry jyasinzou_scene_unused2_02017760_PlayerEntryList[LENGTH_jyasinzou_scene_unused2_02017760_PlayerEntryList];
+#define LENGTH_jyasinzou_scene_unused2_02017780_ActorEntryList 15
+extern ActorEntry jyasinzou_scene_unused2_02017780_ActorEntryList[LENGTH_jyasinzou_scene_unused2_02017780_ActorEntryList];
+#define LENGTH_jyasinzou_scene_unused2_02017870_TransitionActorEntryList 34
+extern TransitionActorEntry jyasinzou_scene_unused2_02017870_TransitionActorEntryList[LENGTH_jyasinzou_scene_unused2_02017870_TransitionActorEntryList];
+#define LENGTH_jyasinzou_scene_unused2_02017A90_RoomList 29
+extern RomFile jyasinzou_scene_unused2_02017A90_RoomList[LENGTH_jyasinzou_scene_unused2_02017A90_RoomList];
+extern Spawn jyasinzou_scene_unused2_02017B78_SpawnList[];
+extern s16 jyasinzou_scene_unused2_02017B7C_ExitList[];
+#define LENGTH_jyasinzou_scene_unused2_02017B84_EnvLightSettingsList 4
+extern EnvLightSettings jyasinzou_scene_unused2_02017B84_EnvLightSettingsList[LENGTH_jyasinzou_scene_unused2_02017B84_EnvLightSettingsList];
+//#define jyasinzou_scene_00017BE0_TLUT_TLUT_COUNT 256
+extern u64 jyasinzou_scene_00017BE0_TLUT[];
+//#define jyasinzou_scene_00017DE0_TLUT_TLUT_COUNT 256
+extern u64 jyasinzou_scene_00017DE0_TLUT[];
+//#define jyasinzou_scene_00017FE0_TLUT_TLUT_COUNT 16
+extern u64 jyasinzou_scene_00017FE0_TLUT[];
+//#define jyasinzou_scene_00018000_TLUT_TLUT_COUNT 16
+extern u64 jyasinzou_scene_00018000_TLUT[];
+#define gSpiritTempleNightEntranceTex_WIDTH 8
+#define gSpiritTempleNightEntranceTex_HEIGHT 128
+extern u64 gSpiritTempleNightEntranceTex[TEX_LEN(u64, gSpiritTempleNightEntranceTex_WIDTH, gSpiritTempleNightEntranceTex_HEIGHT, 16)];
+#define jyasinzou_scene_00018820_CITex_WIDTH 16
+#define jyasinzou_scene_00018820_CITex_HEIGHT 16
+extern u64 jyasinzou_scene_00018820_CITex[TEX_LEN(u64, jyasinzou_scene_00018820_CITex_WIDTH, jyasinzou_scene_00018820_CITex_HEIGHT, 8)];
+#define gSpiritTempleDayEntranceTex_WIDTH 8
+#define gSpiritTempleDayEntranceTex_HEIGHT 128
+extern u64 gSpiritTempleDayEntranceTex[TEX_LEN(u64, gSpiritTempleDayEntranceTex_WIDTH, gSpiritTempleDayEntranceTex_HEIGHT, 16)];
+#define jyasinzou_scene_00019120_Tex_WIDTH 16
+#define jyasinzou_scene_00019120_Tex_HEIGHT 16
+extern u64 jyasinzou_scene_00019120_Tex[TEX_LEN(u64, jyasinzou_scene_00019120_Tex_WIDTH, jyasinzou_scene_00019120_Tex_HEIGHT, 16)];
+#define jyasinzou_scene_00019320_CITex_WIDTH 64
+#define jyasinzou_scene_00019320_CITex_HEIGHT 64
+extern u64 jyasinzou_scene_00019320_CITex[TEX_LEN(u64, jyasinzou_scene_00019320_CITex_WIDTH, jyasinzou_scene_00019320_CITex_HEIGHT, 4)];
+
+#endif
