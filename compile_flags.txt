@@ -1,3 +1,4 @@
+-m32
 -nostdinc
 -fno-builtin
 -funsigned-char
@@ -16,3 +17,7 @@
 -Iinclude
 -Iinclude/libc
 -Iversion/ntsc-1.0
+
+-DUSE_ANON_TAG=1
+-fms-extensions
+-Wno-microsoft-anon-tag
