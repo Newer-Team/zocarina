@@ -7,6 +7,7 @@
 #include "object.h"
 #include "actor_profile.h"
 #include "play_state.h"
+#include "gfx.h"
 
 typedef struct {
     /* 0x00 */ char magic[4]; // Yaz0
@@ -33,5 +34,7 @@ void Yaz0_DecompressImpl(Yaz0Header* hdr, u8* dst);
 
 s32 Object_SpawnPersistent(ObjectContext* objectCtx, s16 objectId);
 void Cutscene_SetupScripted(PlayState* play, CutsceneContext* csCtx);
+
+#define UNUSED __attribute__((unused))
 
 #endif
