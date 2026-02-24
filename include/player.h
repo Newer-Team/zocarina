@@ -794,6 +794,27 @@ typedef void (*AfterPutAwayFunc)(struct PlayState*, struct Player*);
 #define UNK6AE_ROT_UPPER_Y (1 << 7)
 #define UNK6AE_ROT_UPPER_Z (1 << 8)
 
+#ifndef PLAYER_EXT_MEMBER_NAME
+    #define PLAYER_EXT_MEMBER_NAME extension
+#endif
+
+#ifndef PLAYER_EXT_TYPENAME
+    #define PLAYER_EXT_TYPENAME PlayerExt
+#endif
+
+#ifndef PLAYER_EXT_FILENAME
+    #define PLAYER_EXT_FILENAME "player_ext.h"
+#endif
+
+#ifndef PLAYER_EXT_USE_ANON_TAG
+    #define PLAYER_EXT_USE_ANON_TAG USE_ANON_TAG
+#endif
+
+#if USE_PLAYER_EXT && __has_include(PLAYER_EXT_FILENAME)
+    #define _HAS_PLAYER_EXT 1
+    #include PLAYER_EXT_FILENAME
+#endif
+
 typedef struct Player {
     /* 0x0000 */ Actor actor;
     /* 0x014C */ s8 currentTunic; // current tunic from `PlayerTunic`
@@ -987,6 +1008,17 @@ typedef struct Player {
     /* 0x0A86 */ s8 unk_A86;
     /* 0x0A87 */ u8 unk_A87;
     /* 0x0A88 */ Vec3f unk_A88; // previous body part 0 position
+
+#if _HAS_PLAYER_EXT
+    #if PLAYER_EXT_USE_ANON_TAG
+        union {
+            PLAYER_EXT_TYPENAME PLAYER_EXT_MEMBER_NAME;
+            PLAYER_EXT_TYPENAME;
+        };
+    #else
+        PLAYER_EXT_TYPENAME PLAYER_EXT_MEMBER_NAME;
+    #endif
+#endif
 } Player; // size = 0xA94
 
 // z_player_lib.c
