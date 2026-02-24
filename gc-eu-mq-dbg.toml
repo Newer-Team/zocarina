@@ -44819,6 +44819,11 @@
     size = 0
     end = 0x801759C0
 [[symbols]]
+	name = "gGfxPools"
+	address = 0x801B41C0
+	size = 0x24820
+	end = 0x801D89E0
+[[symbols]]
     name = "_ovl_titleSegmentStart"
     address = 0x80800000
     size = 0
