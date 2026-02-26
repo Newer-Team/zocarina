@@ -1,8 +1,8 @@
+#ifndef ULTRA64_GBI_H
+#define ULTRA64_GBI_H
 #if GBI_GLANKK
 #include "gbi_glankk.h"
 #else
-#ifndef ULTRA64_GBI_H
-#define ULTRA64_GBI_H
 
 #include "mbi.h"
 #include "ultratypes.h"
@@ -5184,6 +5184,6 @@ _DW({                                                   \
 
 #endif
 
-#endif /* ULTRA64_GBI_H */
-
 #endif /* GBI_GLANKK */
+
+#endif /* ULTRA64_GBI_H */
