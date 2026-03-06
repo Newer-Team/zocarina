@@ -22,5 +22,4 @@ This requires the following flags to be passed to the compiler:
 ```sh
 -DUSE_ANON_TAG=1
 -fms-extensions
--Wno-microsoft-anon-tag # optional but recommended
 ```
