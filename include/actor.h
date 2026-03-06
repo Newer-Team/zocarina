@@ -194,7 +194,13 @@ typedef struct Actor {
     /* 0x01E */ s8 objectSlot; // Object slot (in ObjectContext) corresponding to the actor's object; original name: "bank"
     /* 0x01F */ s8 attentionRangeType; // Controls the attention actor range and the lock-on leash range. See `AttentionRangeType`.
     /* 0x020 */ u16 sfx; // SFX ID to play. Sfx plays when value is set, then is cleared the following update cycle
-    /* 0x024 */ PosRot world; // Position/rotation in the world
+    union {
+        /* 0x024 */ PosRot world; // Position/rotation in the world
+        struct {
+            /* 0x024 */ Vec3f pos;
+            /* 0x030 */ Vec3s dir;
+        };
+    };
     /* 0x038 */ PosRot focus; // Player + camera focus pos during lock-on, among other uses. For player this represents head pos and rot.
     /* 0x04C */ f32 lockOnArrowOffset; // Height offset of the lock-on arrow relative to `focus` position
     /* 0x050 */ Vec3f scale; // Scale of the actor in each axis
@@ -214,8 +220,23 @@ typedef struct Actor {
     /* 0x08C */ f32 xyzDistToPlayerSq; // Squared distance between the actor and the player
     /* 0x090 */ f32 xzDistToPlayer; // Distance between the actor and the player in the XZ plane
     /* 0x094 */ f32 yDistToPlayer; // Dist is negative if the actor is above the player
-    /* 0x098 */ CollisionCheckInfo colChkInfo; // Variables related to the Collision Check system
-    /* 0x0B4 */ ActorShape shape; // Variables related to the physical shape of the actor
+    
+    union {
+        /* 0x098 */ CollisionCheckInfo colChkInfo; // Variables related to the Collision Check system
+#if USE_ANON_TAG
+        /* 0x098 */ CollisionCheckInfo;
+#endif
+    };
+    
+    union {
+        /* 0x0B4 */ ActorShape shape; // Variables related to the physical shape of the actor
+#if USE_ANON_TAG
+        /* 0x0B4 */ ActorShape;
+#else
+        /* 0x0B4 */ Vec3s rot;
+#endif
+    };
+    
     /* 0x0E4 */ Vec3f projectedPos; // Position of the actor in projected space
     /* 0x0F0 */ f32 projectedW; // w component of the projected actor position
     /* 0x0F4 */ f32 cullingVolumeDistance; // Forward distance of the culling volume (in projected space). See `Actor_CullingCheck` and `Actor_CullingVolumeTest` for more information.
@@ -244,6 +265,12 @@ typedef struct Actor {
     /* 0x13C */ char dbgPad[0x10];
 #endif
 } Actor; // size = 0x14C
+
+#if DEBUG_FEATURES
+    static_assert(sizeof(Actor) == 0x14C, "!");
+#else
+    static_assert(sizeof(Actor) == 0x13C, "!");
+#endif
 
 typedef enum ActorFootIndex {
     /* 0 */ FOOT_LEFT,

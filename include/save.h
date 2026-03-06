@@ -241,14 +241,12 @@ typedef struct SavePlayerData {
 
 // offsets in SaveInfo and SaveContext/Save
 typedef struct SaveInfo {
-#if USE_ANON_TAG
     union {
         /* 0x0000  0x001C */ SavePlayerData playerData; // "S_Private"
+#if USE_ANON_TAG
         /* 0x0000  0x001C */ SavePlayerData; // "S_Private"
-    };
-#else
-    /* 0x0000  0x001C */ SavePlayerData playerData; // "S_Private"
 #endif
+    };
     /* 0x004C  0x0068 */ ItemEquips equips;
     /* 0x0058  0x0074 */ Inventory inventory;
     /* 0x00B8  0x00D4 */ SavedSceneFlags sceneFlags[124];
@@ -282,25 +280,21 @@ typedef struct Save {
     /* 0x14 */ s32 totalDays;
     /* 0x18 */ s32 bgsDayCount; // increments with totalDays, can be cleared with `Environment_ClearBgsDayCount`
 
-#if USE_ANON_TAG
     union {
         /* 0x1C */ SaveInfo info; // "information"
+#if USE_ANON_TAG
         /* 0x1C */ SaveInfo; // "information"
-    };
-#else
-    /* 0x1C */ SaveInfo info; // "information"
 #endif
+    };
 } Save;
 
 typedef struct SaveContext {
-#if USE_ANON_TAG
     union {
         /* 0x0000 */ Save save; // "memory"
+#if USE_ANON_TAG
         /* 0x0000 */ Save; // "memory"
-    };
-#else
-    /* 0x0000 */ Save save; // "memory"
 #endif
+    };
     /* 0x1354 */ s32 fileNum; // "file_no"
     /* 0x1358 */ char unk_1358[0x0004];
     /* 0x135C */ s32 gameMode;
@@ -364,7 +358,7 @@ typedef struct SaveContext {
     /* 0x1424 */ s16 healthAccumulator;
 } SaveContext; // size = 0x1428
 
-_Static_assert(sizeof(SaveContext) == 0x1428, "!");
+static_assert(sizeof(SaveContext) == 0x1428, "!");
 
 typedef enum ButtonStatus {
     /* 0x00 */ BTN_ENABLED,
