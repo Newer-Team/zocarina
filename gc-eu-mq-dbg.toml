@@ -44818,6 +44818,11 @@
     address = 0x801759C0
     size = 0
     end = 0x801759C0
+# [[symbols]]
+# 	name = "gZBuffer"
+# 	address = 0x8012BE40
+# 	size = 0x25800
+# 	end = 0x80151640
 [[symbols]]
 	name = "gGfxPools"
 	address = 0x801B41C0

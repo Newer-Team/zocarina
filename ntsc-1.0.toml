@@ -42749,6 +42749,16 @@
     size = 0
     end = 0x8012BE30
 [[symbols]]
+	name = "gZBuffer"
+	address = 0x8012BE40
+	size = 0x25800
+	end = 0x80151640
+[[symbols]]
+	name = "gGfxSPTaskOutputBuffer"
+	address = 0x80151640
+	size = 0x18000
+	end = 0x80169640
+[[symbols]]
 	name = "gGfxPools"
 	address = 0x8016A640
 	size = 0x24820
