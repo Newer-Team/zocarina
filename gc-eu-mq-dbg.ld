@@ -3774,7 +3774,7 @@ CollisionCheck_SpawnShieldParticles = 0x80062CD4; /* size=140 */
 sSetBossBarinadeModeNormalData   = 0x8011AE0C; /* size=40 */
 func_80028858                    = 0x80028858; /* size=60 */
 AudioLoad_DmaSlowCopy            = 0x800E3874; /* size=132 */
-D_8014B2F4                       = 0x8014B2F4; /* size=1 */
+sMessageStartFrameCount                       = 0x8014B2F4; /* size=1 */
 __osRealloc                      = 0x800FEA70; /* size=812 */
 __osPfsReleasePages              = 0x801043B8; /* size=144 */
 gSawtoothWaveSample              = 0x8012E090; /* size=512 */

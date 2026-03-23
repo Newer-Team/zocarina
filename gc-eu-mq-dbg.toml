@@ -42689,7 +42689,7 @@
     size = 2
     end = 0x8014B2F2
 [[symbols]]
-    name = "D_8014B2F4"
+    name = "sMessageStartFrameCount"
     address = 0x8014B2F4
     size = 1
     end = 0x8014B2F5

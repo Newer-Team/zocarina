@@ -43840,7 +43840,7 @@
     size = 2
     end = 0x8010A922
 [[symbols]]
-    name = "D_8014B2F4"
+    name = "sMessageStartFrameCount"
     address = 0x8010A924
     size = 1
     end = 0x8010A925
@@ -45849,6 +45849,21 @@
 	address = 0x80151640
 	size = 0x18000
 	end = 0x80169640
+[[symbols]]
+	name = "gGfxSPTaskYieldBuffer"
+	address = 0x80169640
+	size = 0xC00
+	end = 0x8016A240
+[[symbols]]
+	name = "gGfxSPTaskStack"
+	address = 0x8016A240
+	size = 0x400
+	end = 0x8016A640
+[[symbols]]
+	name = "gAudioHeap"
+	address = 0x8018EE60
+	size = 0x38000
+	end = 0x801C6E60
 [[symbols]]
 	name = "gGfxPools"
 	address = 0x8016A640
