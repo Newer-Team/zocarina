@@ -14,6 +14,10 @@
 #define _DW(macro) { macro } (void)0
 #endif
 
+#ifndef GBI_ALIGNED
+#  define GBI_ALIGNED(x) __attribute__((aligned(x)))
+#endif
+
 /* To enable Fast3DEX grucode support, define F3DEX_GBI. */
 
 /* Types */
@@ -1027,7 +1031,7 @@ typedef struct Vtx_tn {
     unsigned char  a;       /* alpha  */
 } Vtx_tn;
 
-typedef union Vtx {
+typedef union GBI_ALIGNED(8) Vtx {
     Vtx_t  v;   /* Use this one for colors  */
     Vtx_tn n;   /* Use this one for normals */
     long long int force_structure_alignment;
@@ -1074,7 +1078,7 @@ typedef struct Tri {
  * Last 8 words are the fraction portion of the 4x4 matrix
  */
 typedef long int Mtx_t[4][4];
-typedef union Mtx {
+typedef union GBI_ALIGNED(8) Mtx {
     Mtx_t   m;
     struct {
         u16 intPart[4][4];
@@ -1150,7 +1154,7 @@ typedef struct Vp_t {
     /* both the above arrays are padded to 64-bit boundary */
 } Vp_t;
 
-typedef union Vp {
+typedef union GBI_ALIGNED(8) Vp {
     Vp_t vp;
     long long int force_structure_alignment;
 } Vp;
@@ -1345,7 +1349,7 @@ typedef struct Hilite_t {
     int y2;
 } Hilite_t;
 
-typedef union Light {
+typedef union GBI_ALIGNED(8) Light {
     Light_t         l;
 #ifdef F3DEX_GBI_PL
     PointLight_t    p;
@@ -1353,7 +1357,7 @@ typedef union Light {
     long long int force_structure_alignment[2];
 } Light;
 
-typedef union Ambient {
+typedef union GBI_ALIGNED(8) Ambient {
     Ambient_t l;
     long long int force_structure_alignment[1];
 } Ambient;
@@ -1407,7 +1411,7 @@ typedef struct LookAt {
     Light   l[2];
 } LookAt;
 
-typedef union Hilite {
+typedef union GBI_ALIGNED(4) Hilite {
     Hilite_t h;
     long int force_structure_alignment;
 } Hilite;
@@ -2001,7 +2005,7 @@ typedef struct Gwords {
  * This union is the fundamental type of the display list.
  * It is, by law, exactly 64 bits in size.
  */
-typedef union Gfx {
+typedef union GBI_ALIGNED(8) Gfx {
     Gwords          words;
     Gnoop           noop;
     Gdma            dma;
