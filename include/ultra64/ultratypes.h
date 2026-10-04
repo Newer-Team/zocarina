@@ -3,6 +3,16 @@
 
 #ifdef _LANGUAGE_C
 
+#if USE_DECOMP_TYPES
+typedef signed   char          s8;
+typedef unsigned char          u8;
+typedef signed   short int     s16;
+typedef unsigned short int     u16;
+typedef signed   long          s32;
+typedef unsigned long          u32;
+typedef signed   long long int s64;
+typedef unsigned long long int u64;
+#elif USE_BUILTIN_TYPES
 typedef __INT8_TYPE__    s8;
 typedef __UINT8_TYPE__   u8;
 typedef __INT16_TYPE__  s16;
@@ -11,6 +21,16 @@ typedef __INT32_TYPE__  s32;
 typedef __UINT32_TYPE__ u32;
 typedef __INT64_TYPE__  s64;
 typedef __UINT64_TYPE__ u64;
+#else /* USE_FIXED_TYPES */
+typedef signed   char      s8;
+typedef unsigned char      u8;
+typedef signed   short     s16;
+typedef unsigned short     u16;
+typedef signed   int       s32;
+typedef unsigned int       u32;
+typedef signed   long long s64;
+typedef unsigned long long u64;
+#endif
 
 typedef volatile u8  vu8;
 typedef volatile u16 vu16;
